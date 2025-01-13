@@ -6,9 +6,7 @@ import svgr from 'vite-plugin-svgr';
 export default defineConfig({
   plugins: [
     react(),
-    legacy({
-      targets: ['defaults', 'not IE 11'], 
-    }),
+    legacy(),
     svgr(), 
   ],
   build:{
