@@ -1,10 +1,9 @@
+import RaskatechHeader from "./components/RakshatechHeading";
+
 export default function App() {
   return (
-    <>
-      <h1 className="font-bold">
-        Hello world! 
-      </h1>
-
-    </>
+    <div className="h-screen bg-black flex justify-center">
+      <RaskatechHeader/>
+    </div>
   )
 }

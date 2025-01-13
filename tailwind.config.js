@@ -9,7 +9,9 @@ export default {
       fontFamily:{
         heading:'Roboto',
         buttonText:'Ubuntu',
-        text:'Poppins'
+        text:'Poppins',
+        quantico:'Quantico',
+        playw:"Playwrite VN",
       }
     },
   },
