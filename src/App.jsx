@@ -9,9 +9,16 @@ export default function App() {
       <div className="mt-72">
         <Navbar />
       </div>
-      <div className="mb-20">
+
+      <div className="mb-[5rem]">
         <RakshatechHeader />
       </div>
+
+      <div className="mb-[5rem]">
+        <AboutUs image='/code-dar.png' left='left'/>
+        <AboutUs image='/coder.png' />
+      </div>
+
       <div>
         <FullTree />
       </div>

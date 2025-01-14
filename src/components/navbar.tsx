@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Navbar = () => {
   return (
@@ -9,16 +9,14 @@ const Navbar = () => {
           <img src="/Logo.png" alt="Logo" className="h-full w-full" />
         </div>
       </div>
-
-      {/* Links */}
-      <ul className="flex space-x-8"> {/* Increased gap using space-x-8 */}
+      <ul className="flex space-x-8">
         {[
-          'About',
-          'Schedule',
-          'FAQ',
-          'Sponsor',
-          'Contact Us',
-          'Submissions',
+          "About",
+          "Schedule",
+          "FAQ",
+          "Sponsor",
+          "Contact Us",
+          "Submissions",
         ].map((link) => (
           <li key={link}>
             <a
@@ -29,7 +27,6 @@ const Navbar = () => {
             </a>
           </li>
         ))}
-        {/* Login Button */}
         <li>
           <a
             href="#login"
