@@ -7,10 +7,16 @@ export default defineConfig({
   plugins: [
     react(),
     legacy(),
-    svgr(), 
+    svgr(),
   ],
-  build:{
-    outDir:'dist',
-    minify:'esbuild',
-  }
+  build: {
+    outDir: 'dist',
+    minify: {
+      terserOptions: {
+        compress: {
+          drop_console: true,
+        },
+      },
+    },
+  },
 });
