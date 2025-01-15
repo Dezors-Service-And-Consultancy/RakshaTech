@@ -47,8 +47,4 @@ export default function Faq() {
       </div>
     </div>
   );
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 61528e56937e22cde362e4cc26ca5fc7644ca763
