@@ -50,7 +50,7 @@ const usersController = {
             throw new Error("Invalid Login Credentials");
         }
         //! Generate Token
-        const token = jwt.sign({ id: user._id }, "rararasputin", {
+        const token = jwt.sign({ id: user._id }, "7210110810811132119111114108100", {
             expiresIn: "10d",
         });
         //! Send Response
