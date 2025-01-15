@@ -29,7 +29,7 @@ export default function Faq() {
       id: 6,
       question: "Do you offer support after project completion?",
       answer: "Yes, we provide ongoing support and maintenance for our projects.",
-    }
+    } 
   ];
   const [showSelectedQ, setshowSelectedQ] = useState(null);
   const showAnswer = (index) => {
