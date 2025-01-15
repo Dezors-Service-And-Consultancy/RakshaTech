@@ -3,6 +3,7 @@ import FullTree from "./components/timelineTree/fullTree";
 import AboutUs from "./components/aboutUs";
 import RakshatechHeader from "./components/RakshatechHeading";
 import Navbar from "./components/navbar";
+import Faq from "./components/faq"
 export default function App() {
   return (
     <div className="min-h-screen w-auto bg-black flex justify-center flex-col">
@@ -21,6 +22,9 @@ export default function App() {
 
       <div>
         <FullTree />
+      </div>
+      <div>
+        <Faq/>
       </div>
     </div>
   );
