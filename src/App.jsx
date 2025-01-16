@@ -24,7 +24,7 @@ export default function App() {
         <FullTree />
       </div>
 
-      <Footer/>
+      <Footer/>+
     </div>
   );
 }
