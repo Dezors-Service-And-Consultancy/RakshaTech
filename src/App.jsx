@@ -5,6 +5,7 @@ import RakshatechHeader from "./components/RakshatechHeading";
 import Navbar from "./components/navbar";
 import Faq from "./components/faq";
 import Footer from "./components/footer";
+import Catch from "./components/catch";
 
 import NewThemeGrid from "./components/NewThemeGrid"; 
 
@@ -23,6 +24,9 @@ export default function App() {
         <img src="./assets/image 6.png" alt="company" />
         <img src="./assets/image 7.png" alt="company" />
         <img src="./assets/image 8.png" alt="company" />
+      </div>
+      <div className="mb-[5rem]">
+        <Catch />
       </div>
 
       <div className="mb-[5rem]">
