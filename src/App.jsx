@@ -13,18 +13,21 @@ import NameCard from "./components/namecard";
 export default function App() {
   return (
     <div className="min-h-screen w-auto bg-black flex justify-center flex-col">
-      <div className="mt-72">
+      <div className="mt-56">
         <Navbar />
       </div>
 
       <div className="mb-[5rem]">
         <RakshatechHeader />
       </div>
-      <div className="flex max-w-20vww justify-center">
-        <img src="./assets/image 5.png" alt="company" />
-        <img src="./assets/image 6.png" alt="company" />
-        <img src="./assets/image 7.png" alt="company" />
-        <img src="./assets/image 8.png" alt="company" />
+      <div className="flex flex-row max-w-full justify-center items-center min-h-[7rem] gap-[2rem] mb-[4rem]">
+        <img src="/image 5.png" alt="company" />
+        <img src="/image 6.png" alt="company" />
+        <img src="./image 7.png" alt="company" />
+        <img src="./image 8.png" alt="company" />
+      </div>
+      <div className="mb-[5rem] mr-[.5rem]">
+        <Catch />
       </div>
 
       <div className="mb-[5rem]">
@@ -35,19 +38,17 @@ export default function App() {
       <div className="mb-[5rem]">
         <FullTree />
       </div>
-      
       <div className="flex flex-col items-center justify-center p-4 m-4 mb-[5rem]">
         <NewThemeGrid/>
       </div>
-      <div className="mb-[5rem]">
-        <Catch />
+ 
+      <div className="mb-[5rem] ">
+        <NameCard/>
       </div>
       <div className="mb-[5rem]">
         <Faq/>
       </div>
-      <div className="mb-[5rem]">
-        <NameCard />
-      </div>
+
       <div>
         <Footer/>
       </div>

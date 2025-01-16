@@ -12,6 +12,9 @@ export default {
         text:'Poppins',
         quantico:'Quantico',
         playw:"Playwrite VN",
+      },
+      screens:{
+        'xs':'360px'
       }
     },
   },
