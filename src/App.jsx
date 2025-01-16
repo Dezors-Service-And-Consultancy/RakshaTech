@@ -38,9 +38,11 @@ export default function App() {
       <div className="mb-[5rem]">
         <FullTree />
       </div>
-      
+      <div className="flex flex-col items-center justify-center p-4 m-4 mb-[5rem]">
+        <NewThemeGrid/>
+      </div>
  
-      <div className="mb-[5rem]">
+      <div className="mb-[5rem] ">
         <NameCard/>
       </div>
       <div className="mb-[5rem]">
