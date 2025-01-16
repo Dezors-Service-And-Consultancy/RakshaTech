@@ -5,6 +5,8 @@ import RakshatechHeader from "./components/RakshatechHeading";
 import Navbar from "./components/navbar";
 import Faq from "./components/faq";
 import Footer from "./components/footer";
+import Catch from "./components/catch"
+import NewThemeGrid from "./components/NewThemeGrid"; 
 import NameCard from "./components/namecard";
 
 
