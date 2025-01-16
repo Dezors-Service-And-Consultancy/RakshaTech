@@ -44,14 +44,12 @@ export default function App() {
         <NewThemeGrid/>
       </div>
       <div className="mb-[5rem]">
-        <Catch />
+        <NameCard/>
       </div>
       <div className="mb-[5rem]">
         <Faq/>
       </div>
-      <div className="mb-[5rem]">
-        <NameCard />
-      </div>
+
       <div>
         <Footer/>
       </div>
