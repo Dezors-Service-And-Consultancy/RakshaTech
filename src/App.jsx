@@ -8,6 +8,8 @@ import Footer from "./components/footer";
 import Catch from "./components/catch";
 
 import NewThemeGrid from "./components/NewThemeGrid"; 
+import NameCard from "./components/namecard";
+
 
 export default function App() {
   return (
@@ -40,6 +42,9 @@ export default function App() {
       
       <div className="flex flex-col items-center justify-center p-4 m-4 mb-[5rem]">
         <NewThemeGrid/>
+      </div>
+      <div className="mb-[5rem]">
+        <Catch />
       </div>
       <div className="mb-[5rem]">
         <Faq/>
