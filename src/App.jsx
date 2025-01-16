@@ -5,7 +5,6 @@ import RakshatechHeader from "./components/RakshatechHeading";
 import Navbar from "./components/navbar";
 import Faq from "./components/faq";
 import Footer from "./components/footer";
-import ThemeGrid from "./components/ThemeGrid";
 import GlowingEllipse from "./components/comp/GlowingEllipse";
 import NewThemeGrid from "./components/NewThemeGrid"; 
 
@@ -28,7 +27,13 @@ export default function App() {
       <div className="mb-[5rem]">
         <FullTree />
       </div>
-
+      <div>
+        <GlowingEllipse />
+      </div>
+      <NewThemeGrid/>
+      <div >
+        <Faq/>
+      </div>
       <Footer/>
     </div>
   );
