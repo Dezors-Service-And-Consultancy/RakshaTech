@@ -9,7 +9,7 @@ export default function L_SubTree() {
           <div className="h-[.2rem] w-[20vw] bg-[#1B804E]"></div>
           <div className="text-gray-700 font-semibold mr-4"></div>
           <button className="bg-[#1B804E] text-white font-bold py-2 px-4 rounded">
-            Register Here
+            Event Commencement
           </button>
         </div>
         <div className="flex flex-row-reverse justify-center items-center">
@@ -17,7 +17,7 @@ export default function L_SubTree() {
           <div className="h-[.2rem] w-[20vw] bg-[#1B804E]"></div>
           <div className="text-gray-700 font-semibold mr-4"></div>
           <button className="bg-[#1B804E] text-white font-bold py-2 px-4 rounded">
-            Register Here
+            First Evaluation Round
           </button>
         </div>
       </div>
@@ -33,7 +33,7 @@ export default function L_SubTree() {
           <div className="h-[.2rem] w-[20vw] bg-[#1B804E]"></div>
           <div className="text-gray-700 font-semibold ml-4"></div>
           <button className="bg-[#1B804E] text-white font-bold py-2 px-4 rounded">
-            Register Here
+            Second Evaluation Round
           </button>
         </div>
       </div>
