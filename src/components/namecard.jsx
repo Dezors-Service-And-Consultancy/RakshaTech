@@ -1,5 +1,5 @@
 import React from 'react';
-import './NameCard.css';
+import './comp/NameCard.css';
 
 const cardsData = [
     {
