@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import GradientRectangle from './comp/GradientRectangle';
-import icon1 from '../assets/icons8-users-100 (1).png';
-import icon2 from '../assets/icons8-drone-100 (1).png';
-import icon3 from '../assets/icons8-automobile-100.png';
-import icon4 from '../assets/icons8-cart-100.png';
-import icon5 from '../assets/icons8-robot-100.png';
-import icon6 from '../assets/icons8-education-100 (1).png';
-import icon7 from '../assets/icons8-medical-100 (1).png';
-import icon8 from '../assets/icons8-coins-100.png';
+import icon1 from './assets/icons8-users-100 (1).png';
+import icon2 from './assets/icons8-drone-100 (1).png';
+import icon3 from './assets/icons8-automobile-100.png';
+import icon4 from './assets/icons8-cart-100.png';
+import icon5 from './assets/icons8-robot-100.png';
+import icon6 from './assets/icons8-education-100 (1).png';
+import icon7 from './assets/icons8-medical-100 (1).png';
+import icon8 from './assets/icons8-coins-100.png';
 
 interface Theme {
   icon: string;

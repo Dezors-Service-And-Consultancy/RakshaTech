@@ -7,6 +7,8 @@ import Faq from "./components/faq";
 import Footer from "./components/footer";
 
 import NewThemeGrid from "./components/NewThemeGrid"; 
+import NameCard from "./components/namecard";
+
 
 export default function App() {
   return (
@@ -38,7 +40,13 @@ export default function App() {
         <NewThemeGrid/>
       </div>
       <div className="mb-[5rem]">
+        <Catch />
+      </div>
+      <div className="mb-[5rem]">
         <Faq/>
+      </div>
+      <div className="mb-[5rem]">
+        <NameCard />
       </div>
       <div>
         <Footer/>
