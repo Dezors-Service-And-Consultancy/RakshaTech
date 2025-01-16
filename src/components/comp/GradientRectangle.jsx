@@ -2,17 +2,21 @@ import React from 'react';
 
 const GradientRectangle = () => {
   const rectangleStyle = {
-    width: '256.3px',
-    height: '360px',
-    borderRadius: '20px',
-    background: 'linear-gradient(to bottom, #031310 0%, #005A41 100%)',
-    position: 'absolute',
-    bottom: '0',
-    left: '50%', // Center horizontally
-    transform: 'translateX(-50%)', // Adjust for centering
+    width: '239.5px',
+    height: '262px',
+    borderRadius: '5px',
+    background: 'linear-gradient(to bottom, #02DDA0, #013326)',
+    opacity: 0.4,
+    filter: 'blur(4px)',
+    position: 'relative',
   };
 
   return <div style={rectangleStyle}></div>;
 };
 
+<<<<<<< HEAD
 export default GradientRectangle;
+=======
+
+export default GradientRectangle;
+>>>>>>> 7e109d80bdecc9372fc19b1750f33bc6aada5cdc

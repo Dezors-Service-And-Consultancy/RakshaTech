@@ -7,6 +7,7 @@ export default function L_SubTree() {
         <div className="flex flex-row-reverse justify-center items-center">
           <div className="h-[.8rem] w-[.8rem] rounded-full bg-[#1B804E]"></div>
           <div className="h-[.2rem] w-[20vw] bg-[#1B804E]"></div>
+          <div className="text-gray-700 font-semibold mr-4"></div>
           <button className="bg-[#1B804E] text-white font-bold py-2 px-4 rounded">
             Register Here
           </button>
@@ -14,6 +15,7 @@ export default function L_SubTree() {
         <div className="flex flex-row-reverse justify-center items-center">
           <div className="h-[.8rem] w-[.8rem] rounded-full bg-[#1B804E]"></div>
           <div className="h-[.2rem] w-[20vw] bg-[#1B804E]"></div>
+          <div className="text-gray-700 font-semibold mr-4"></div>
           <button className="bg-[#1B804E] text-white font-bold py-2 px-4 rounded">
             Register Here
           </button>
@@ -29,6 +31,7 @@ export default function L_SubTree() {
         <div className="flex flex-row justify-center items-center">
           <div className="h-[.8rem] w-[.8rem] rounded-full bg-[#1B804E]"></div>
           <div className="h-[.2rem] w-[20vw] bg-[#1B804E]"></div>
+          <div className="text-gray-700 font-semibold ml-4"></div>
           <button className="bg-[#1B804E] text-white font-bold py-2 px-4 rounded">
             Register Here
           </button>
