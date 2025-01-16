@@ -59,7 +59,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex flex-grow  pl-10">
-          <button className="h-[2rem] w-[7rem] shadow-lg  bg-gradient-to-r from-[#376641] via-[#0e5d3b] to-[#53F69E] rounded-lg text-black font-semibold font-text">
+          <button className="h-[2rem] w-[7rem] shadow-lg  bg-[#53F69E] rounded-lg text-black font-semibold font-text">
             Send
           </button>
         </div>
