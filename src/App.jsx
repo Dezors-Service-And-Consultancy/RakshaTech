@@ -5,9 +5,6 @@ import RakshatechHeader from "./components/RakshatechHeading";
 import Navbar from "./components/navbar";
 import Faq from "./components/faq";
 import Footer from "./components/footer";
-import Catch from "./components/catch";
-
-import NewThemeGrid from "./components/NewThemeGrid"; 
 import NameCard from "./components/namecard";
 
 
@@ -40,9 +37,7 @@ export default function App() {
         <FullTree />
       </div>
       
-      <div className="flex flex-col items-center justify-center p-4 m-4 mb-[5rem]">
-        <NewThemeGrid/>
-      </div>
+ 
       <div className="mb-[5rem]">
         <NameCard/>
       </div>
