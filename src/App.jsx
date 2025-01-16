@@ -20,8 +20,8 @@ export default function App() {
       <div className="mb-[5rem]">
         <RakshatechHeader />
       </div>
-      <div className="flex max-w-full justify-center">
-        <img src="./assets/image 5.png" alt="company" className="h-16 w-16"/>
+      <div className="flex max-w-20vww justify-center">
+        <img src="./assets/image 5.png" alt="company" />
         <img src="./assets/image 6.png" alt="company" />
         <img src="./assets/image 7.png" alt="company" />
         <img src="./assets/image 8.png" alt="company" />
