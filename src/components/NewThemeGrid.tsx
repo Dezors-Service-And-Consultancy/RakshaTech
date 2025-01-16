@@ -9,14 +9,14 @@ import icon6 from '../assets/icons8-education-100 (1).png';
 import icon7 from '../assets/icons8-medical-100 (1).png';
 import icon8 from '../assets/icons8-coins-100.png';
 
-interface Theme {
-  icon: string;
-  label: string;
-  about: string;
-}
 
-const NewThemeGrid: React.FC = () => {
-  const themes: Theme[] = [
+// interface Theme {
+//   icon: string;
+//   label: string;
+//   about: string;
+// }
+const NewThemeGrid = () => {
+  const themes = [
     { icon: icon1, label: 'Consumer Tech', about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, nisi.' },
     { icon: icon2, label: 'Consumer Tech', about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, nisi.' },
     { icon: icon3, label: 'Consumer Tech', about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, nisi.' },
@@ -29,7 +29,7 @@ const NewThemeGrid: React.FC = () => {
 
   const [flippedIndex, setFlippedIndex] = useState<number | null>(null);
 
-  const handleFlip = (index: number) => {
+  const handleFlip = (index) => {
     setFlippedIndex(flippedIndex === index ? null : index);
   };
 
