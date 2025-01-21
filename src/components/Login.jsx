@@ -54,7 +54,7 @@ if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(formData.email)) newErrors.
         </h1>
         <div className="glassmorphism flex flex-row items-center justify-center">
           
-          <div className="w-full rounded-lg shadow">
+          <div className="w-full rounded-lg">
             <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
               <form className="space-y-3 md:space-y-5" onSubmit={handleSubmit}>
                 <div>
