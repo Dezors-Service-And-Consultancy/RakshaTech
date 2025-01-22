@@ -17,7 +17,7 @@ const Navbar = () => {
       </div>
 
       {/* Menu + Buttons Container */}
-      <div className="flex items-center justify-end space-x-8">
+      <div className="flex items-center justify-end space-x-4 md:space-x-8">
         {/* Inline Links for Large Screens */}
         <ul className="hidden lg:flex space-x-4 lg:space-x-8 p-4">
           {["About", "Schedule", "FAQ", "Sponsor", "Contact Us"].map((link) => (
@@ -71,12 +71,12 @@ const Navbar = () => {
 
       {/* Collapsible Menu for Small and Medium Screens */}
       {isOpen && (
-        <ul className="absolute min-h-[20.5vh] top-[5.6vh] md:top-[6vh] xs:top-[5.8vh] left-0 w-full bg-black text-white flex flex-col items-center s lg:hidden gap-2">
+        <ul className="absolute min-h-[20.5vh] top-[5.6vh] md:top-[6vh] xs:top-[5.8vh] left-0 w-full bg-black text-white flex flex-col items-center lg:hidden gap-2 px-4">
           {["About", "Schedule", "FAQ", "Sponsor", "Contact Us"].map((link) => (
-            <li key={link}>
+            <li key={link} className="w-full text-center">
               <a
                 href={`#${link.toLowerCase()}`}
-                className="px-4 py-1  rounded-md hover:bg-gradient-to-r from-[#36543df9] via-[#0c5636] to-[#0AAF56] active:bg-gradient-to-br from-[#02F6B3] to-[#007A58] transition duration-300"
+                className="block px-4 py-1 rounded-md hover:bg-gradient-to-r from-[#36543df9] via-[#0c5636] to-[#0AAF56] active:bg-gradient-to-br from-[#02F6B3] to-[#007A58] transition duration-300"
               >
                 {link}
               </a>
