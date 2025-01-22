@@ -1,0 +1,82 @@
+/* Add your styles here */
+.hackathon-text {
+    font-size: 8rem; /* Adjusted value */
+    opacity: 0.5; /* Decrease opacity */
+    position: absolute; /* Fix position */
+    left: 50%; /* Align to the right of the screen */
+    top: 0; /* Align to the top of the screen */
+
+}
+
+body{
+  overflow: hidden;
+}
+/* Existing styles */
+#root {
+  /* max-width: 1280px; */
+  /* margin: 0 auto; */
+  /* padding: 2rem; */
+  /* text-align: center; */
+}
+
+.ellipse {
+     z-index: 0;
+    width: 81.87rem;
+    height: 84.93rem;
+    background-color: #01c38d;
+    border-radius: 50%; /* This creates the ellipse shape */
+}
+
+.flex {
+  display: flex;
+}
+.flex-col{
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+.bg-primary-600 {
+  background-color: #12a84c;
+}
+
+.focus\:ring-4:focus {
+  ring-width: 4px;
+}
+
+.focus\:outline-none:focus {
+  outline: 0;
+}
+
+.focus\:ring-primary-300:focus {
+  ring-color: #93fdaf;
+}
+.text-primary-600{
+  color: #12a84c;
+}
+
+.glassmorphism {
+  background: rgba(157, 242, 178, 0.08); /* Semi-transparent white */
+  backdrop-filter: blur(10px); /* Blur effect */
+  border-radius: 10px; /* Rounded corners */
+  border: 1px solid rgba(34, 43, 37, 0.721); /* Light border */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  width: 30vw;
+  padding: 1rem 3rem ;
+  z-index: 1;
+}
+
+.logincontainer{
+ background-color: rgb(0, 0, 0);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ height: 70vh;
+ padding-top: 2rem;
+ margin-top: 6rem;
+}
+.bg-field{
+  background: rgba(157, 242, 178, 0.08);
+}
