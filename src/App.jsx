@@ -47,7 +47,7 @@ export default function App() {
         </div>
       </div>
       <div className="absolute w-screen h-screen z-2 overflow-hidden">
-        <div className="lg:translate-x-[-15rem] md:translate-x-[-10rem] sm:translate-x-[-20rem] translate-x-[-10rem] lg:translate-y-[-4rem] translate-y-[-2rem] opacity-60">
+        <div className="lg:translate-x-[-25rem] md:translate-x-[-10rem] sm:translate-x-[-20rem] translate-x-[-10rem] lg:translate-y-[-4rem] translate-y-[-2rem] opacity-60">
           <SphereBackground
             radius={getRadius(2, 1.75, 1.5, 1)}
             opacity={0}
