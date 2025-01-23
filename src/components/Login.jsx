@@ -49,7 +49,7 @@ if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(formData.email)) newErrors.
     return (
          
         <section className="logincontainer space-y-6">
-        <h1 className="text-xl text-white font-bold leading-tight tracking-tight md:text-2xl dark:text-white">
+        <h1 className="text-xl text-white font-semibold leading-tight tracking-tight md:text-2xl dark:text-white">
             Register Here
         </h1>
         <div className="glassmorphism flex flex-row items-center justify-center">
