@@ -35,7 +35,7 @@ const Navbar = () => {
         {/* Submissions and Login Buttons (Always on the Right) */}
         <a
           href="#submissions"
-          className="px-4 py-2 lg:px-6 lg:py-3 rounded-md hover:bg-gradient-to-r from-[#36543df9] via-[#0c5636] to-[#0AAF56] active:bg-gradient-to-br from-[#02F6B3] to-[#007A58] transition duration-300"
+          className="px-4 py-2 lg:px-6 lg:py-3 rounded-md bg-gradient-to-r from-[#36543df9] via-[#0c5636] to-[#0AAF56] active:bg-gradient-to-br from-[#02F6B3] to-[#007A58] transition duration-300"
         >
           Submissions
         </a>
