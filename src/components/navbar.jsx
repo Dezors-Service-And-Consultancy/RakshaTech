@@ -8,16 +8,20 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full px-4 md:px-8 lg:pr-16 text-white flex items-center justify-between z-40">
+    <nav className="fixed top-0 left-0 w-full pr-4 md:pr-8 lg:pr-16  text-white flex items-center justify-between z-40">
       {/* Logo */}
       <div className="flex items-center">
         <div className="h-[80px] w-[80px] md:h-[100px] md:w-[100px] lg:h-[120px] lg:w-[120px] z-50 rounded-full flex justify-center items-center">
-          <img src="/Logo.png" alt="Logo" className="h-full w-full" />
+          <img
+            src="/Logo.png"
+            alt="Logo"
+            className="h-full w-full backdrop-blur-sm"
+          />
         </div>
       </div>
 
       {/* Menu + Buttons Container */}
-      <div className="fixed top-0 left-0 w-full px-4 md:px-8 lg:pr-16 flex items-center justify-end  bg-black bg-opacity-55 space-x-4 md:space-x-8">
+      <div className="backdrop-blur-lg fixed top-0 left-0 w-full px-4 md:px-8 lg:pr-16 flex items-center justify-end  bg-black bg-opacity-55 space-x-4 md:space-x-8">
         {/* Inline Links for Large Screens */}
         <ul className="hidden lg:flex space-x-4 lg:space-x-8 p-4">
           {["About", "Schedule", "FAQ", "Sponsor", "Contact Us"].map((link) => (
