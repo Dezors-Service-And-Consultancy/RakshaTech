@@ -1,7 +1,7 @@
 import React from "react";
 import Login from "./components/Login";
 import "./Registration.css";
-import logo from "../public/Logo.png";
+
 
 function Registration() {
   return (
