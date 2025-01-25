@@ -24,7 +24,7 @@ const Navbar = () => {
       <div className="backdrop-blur-lg fixed top-0 left-0 w-full px-4 md:px-8 lg:pr-16 flex items-center justify-end  bg-black bg-opacity-55 space-x-4 md:space-x-8">
         {/* Inline Links for Large Screens */}
         <ul className="hidden lg:flex space-x-4 lg:space-x-8 p-4">
-          {["About", "Schedule", "FAQ", "Sponsor", "Contact Us"].map((link) => (
+          {["About", "Schedule", "FAQ", "Sponsor", "ContactUs"].map((link) => (
             <li key={link}>
               <a
                 href={`#${link.toLowerCase()}`}
