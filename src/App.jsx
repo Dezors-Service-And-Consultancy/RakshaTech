@@ -10,6 +10,7 @@ import NewThemeGrid from "./components/NewThemeGrid";
 import NameCard from "./components/namecard";
 import SphereBackground from "./components/sphereBackground";
 
+
 export default function App() {
   return (
     <div className="min-h-screen w-auto bg-black  z-0">
@@ -23,14 +24,18 @@ export default function App() {
           <SphereBackground radius={2} opacity={0} depth={1} />
         </div>
       </div>
+
       <div className=" min-h-screen w-auto flex justify-center flex-col z-10">
         <div className="mt-56 z-10">
           <Navbar />
         </div>
+      
 
         <div className="mb-[5rem]">
           <RakshatechHeader />
         </div>
+        
+    
         <div className="flex flex-row max-w-full justify-center items-center min-h-[7rem] gap-[2rem] mb-[4rem]">
           <img src="/image 5.png" alt="company" />
           <img src="/image 6.png" alt="company" />
