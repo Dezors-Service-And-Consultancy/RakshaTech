@@ -7,6 +7,8 @@ import Registration from "./Registration.jsx";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     {/* <App /> */}
-    <Registration />
+    <div className="overflow-y-hidden">
+      <Registration />
+    </div>
   </StrictMode>
 );
