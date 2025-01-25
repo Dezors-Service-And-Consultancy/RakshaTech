@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Catch() {
   return (
-    <div className="flex flex-col min-h-[5vh] md:min-h-[6vh] w-full justify-between items-center">
+    <div id="sponsor" className="flex flex-col min-h-[5vh] md:min-h-[6vh] w-full justify-between items-center">
       {/* Title Section */}
       <div className="flex flex-col justify-between items-center space-y-2 md:space-y-4">
         <h1 className="text-xl md:text-2xl lg:text-4xl font-quantico tracking-widest bg-gradient-to-b from-[#FFFFFF] via-[#FFFFFF] to-[#04362A] bg-clip-text text-transparent text-center">
