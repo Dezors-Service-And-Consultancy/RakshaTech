@@ -1,9 +1,9 @@
 const User = require("../models/User");
 const bcrypt = require("bcryptjs");
+const asyncHandler = require("express-async-handler");
 
 
-const register = async (req, res) => {
-    try {
+const register = asyncHandler(async (req, res) => {
         const { fullname, college, email, password, category } = req.body;
         //Check if all fields are filled
         if (!fullname || !college || !email || !password || !category) {
@@ -39,10 +39,7 @@ const register = async (req, res) => {
             category: userRegistered.category,
           }
         });
-    } catch (error) {
-        throw new Error(error);
-    }
-};
+});
 
 module.exports = {register};
 

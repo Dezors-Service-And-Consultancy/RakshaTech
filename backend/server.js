@@ -2,6 +2,9 @@ const express = require('express');
 const usersRouter = require('./routes/usersRouter');
 const connectDB = require('./utils/connectDB');
 const cors = require('cors');
+const errorHandler = require('./middlewares/errorMiddleware');
+require('dotenv').config();
+
 connectDB();
 const app = express();
 
@@ -16,5 +19,8 @@ app.use(cors({
 
 //! Routes
 app.use("/users", usersRouter);
+
+//! Error Handler
+app.use(errorHandler);
 
 app.listen(PORT, console.log(`Server is up and running on port ${PORT}`));
