@@ -14,9 +14,5 @@ const GradientRectangle = () => {
   return <div style={rectangleStyle}></div>;
 };
 
-<<<<<<< HEAD
-export default GradientRectangle;
-=======
 
 export default GradientRectangle;
->>>>>>> 7e109d80bdecc9372fc19b1750f33bc6aada5cdc

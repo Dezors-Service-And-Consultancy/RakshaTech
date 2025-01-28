@@ -28,7 +28,6 @@ const AltRegistration = () => {
       // Here, handle the form submission
       console.log("Form values", values);
       // Simulate successful registration
-    //   navigate("/login"); // Redirect user to login page
     },
   });
 

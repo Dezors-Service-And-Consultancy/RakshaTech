@@ -2,7 +2,6 @@ import React from "react";
 import Login from "./components/Login";
 import "./Registration.css";
 
-
 function Registration() {
   return (
     <>
