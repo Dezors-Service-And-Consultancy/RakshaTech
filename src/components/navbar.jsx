@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import {Link} from "react-router-dom"
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -43,12 +43,13 @@ const Navbar = () => {
         >
           Submissions
         </a>
-        <a
+        <Link
           href="#login"
+          to="/users/register"
           className="px-4 py-2 rounded-[.5rem] border-2 border-[#007A58] bg-black text-[#007A58] hover:border-gradient-to-br hover:from-[#02F6B3] hover:to-[#007A58] transition duration-300 xs:mt-[.07rem] md:mt-[0rem] whitespace-nowrap overflow-hidden"
         >
           Log in
-        </a>
+        </Link>
 
         {/* Mobile Menu Button (visible for screens <= 767px) */}
         <button
