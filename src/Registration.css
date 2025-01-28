@@ -1,7 +1,5 @@
-/* Add your styles here */
 .hackathon-text {
     font-size: 8rem; /* Adjusted value */
-    /* opacity: 0.5;  */
     position: absolute; /* Fix position */
     left: 72%; /* Align to the right of the screen */
     top: 0; /* Align to the top of the screen */
@@ -12,12 +10,8 @@ body{
   overflow: hidden;
 }
 /* Existing styles */
-#root {
-  /* max-width: 1280px; */
-  /* margin: 0 auto; */
-  /* padding: 2rem; */
-  /* text-align: center; */
-}
+/* #root {
+} */
 
 .ellipse {
      z-index: 0;
@@ -62,8 +56,6 @@ body{
   border-radius: 10px; /* Rounded corners */
   border: 1px solid rgba(34, 43, 37, 0.721); /* Light border */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Shadow effect */
-  /* width: 30vw;
-  padding: 1rem 3rem ; */
   z-index: 1;
 }
 
@@ -75,8 +67,6 @@ body{
   flex-direction: column;
   height: 70vh;
   width: 100vw;
- /* padding-top: 2rem;
- margin-top: 6rem; */
 }
 .bg-field{
   background: rgba(157, 242, 178, 0.08);

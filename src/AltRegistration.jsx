@@ -1,3 +1,5 @@
+// >>> what is this page for (remove axios if not needed)
+
 import React from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
@@ -28,7 +30,6 @@ const AltRegistration = () => {
       // Here, handle the form submission
       console.log("Form values", values);
       // Simulate successful registration
-    //   navigate("/login"); // Redirect user to login page
     },
   });
 
