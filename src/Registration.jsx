@@ -6,6 +6,7 @@ import logo from "../public/Logo.png"
 
 function Registration() {
   const [registrationStatus, setRegistrationStatus] = useState(null); 
+  console.log("registration enabled")
   return (
     <>
       <div className="main bg-black h-screen overflow-y-hidden">
