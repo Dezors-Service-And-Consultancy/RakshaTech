@@ -1,7 +1,7 @@
 import React from "react";
 export default function Footer() {
   return (
-    <div className="flex flex-row min-h-[27rem] w-auto  border-white items-center ">
+    <div id="contactus" className="flex flex-row min-h-[27rem] w-auto  border-white items-center ">
       <div className="flex flex-col h-full w-[20%]   justify-center items-center p-10">
         <div className="mb-10">
           <h1 className="text-white font-quantico text-xl">Phone</h1>

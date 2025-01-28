@@ -16,6 +16,7 @@ root.render(
     
     <QueryClientProvider client={queryClient}> 
       <App />
+      {/* <Registration /> */}
     </QueryClientProvider>
    </StrictMode>
   // </React.StrictMode>
