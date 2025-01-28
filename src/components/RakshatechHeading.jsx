@@ -1,8 +1,7 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function RakshatechHeader() {
-  const navigate = useNavigate();
   return (
     <div className="flex flex-col min-h-[30vh] md:min-h-[35vh] w-full justify-between items-center  md:pt-8 lg:pt-10 pb-8 md:pb-12 lg:pb-16">
       {/* Title Section */}
