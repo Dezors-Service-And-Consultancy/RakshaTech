@@ -57,11 +57,11 @@ export default function Login() {
       <h2 className="hackathon-text z-10 text-white opacity-10 md:opacity-25 lg:opacity-50 rotate-90">
         HACKATHON
       </h2>
-      <div className="mt-[16rem] pt-[6rem] ">
-        <h1 className="text-xl text-white font-semibold leading-tight tracking-tight md:text-2xl dark:text-white">
+      <div className="mt-[16rem] pt-[6rem] flex flex-col align-middle justify-center ">
+        <h1 className="text-xl text-white text-center font-semibold leading-tight tracking-tight md:text-2xl dark:text-white">
           Register Here
         </h1>
-        <div className="w-[350px] h-[300px] sm:w-[400px] sm-[410.6px] md:w-[486.86px] md:h-[517.17px] flex flex-row items-center justify-center">
+        <div className=" w-[350px] h-[300px] sm:w-[400px] sm-[410.6px] md:w-[486.86px] md:h-[517.17px] flex flex-row items-center justify-center">
           <div className="glassmorphism py-[1rem] px-[3rem] w-full rounded-lg">
             <div className="t-[1rem] mt-[1rem] mb-[1rem] md:mt-[1.5rem] md:mb-[1.5rem]">
               <form className="space-y-3 md:space-y-5" onSubmit={handleSubmit}>

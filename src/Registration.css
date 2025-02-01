@@ -2,13 +2,13 @@
     font-size: 8rem; /* Adjusted value */
     position: absolute; /* Fix position */
     left: 72%; /* Align to the right of the screen */
-    top: 0; /* Align to the top of the screen */
+    top: 32%; /* Align to the top of the screen */
 
 }
 
-body{
+/* body{
   overflow: hidden;
-}
+} */
 /* Existing styles */
 /* #root {
 } */
