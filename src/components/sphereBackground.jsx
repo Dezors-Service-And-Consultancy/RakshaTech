@@ -1,4 +1,3 @@
-import { createRoot } from "react-dom/client";
 import { Canvas } from "@react-three/fiber";
 import { useFrame } from "@react-three/fiber";
 import { useRef, useMemo } from "react";
@@ -9,18 +8,18 @@ function WireSphere({ radius, opacity, depth }) {
   const outerSphereRef = useRef();
   const lineRefs = useRef([]);
 
-  // Calculate positions for small spheres (y-axis positions at -2, 0, and 2)
+  // Update sphere positions to scale with radius
   const spherePositions = useMemo(
     () => [
-      [0, (-1 * Math.abs(0 - radius)) / 2, 0], // bottom
+      [0, -radius * 0.5, 0], // bottom
       [0, 0, 0], // middle
-      [0, Math.abs(0 - radius) / 2, 0], // top
+      [0, radius * 0.5, 0], // top
     ],
-    []
+    [radius]  // Add radius as dependency
   );
 
-  // Add new function to find nearby vertices
-  const findNearbyVertices = (geometry, sphereY, threshold = 0.3) => {
+  // Update threshold to scale with radius
+  const findNearbyVertices = (geometry, sphereY, threshold = radius * 0.15) => {
     const positions = geometry.attributes.position.array;
     const nearbyVertices = [];
 
@@ -50,14 +49,14 @@ function WireSphere({ radius, opacity, depth }) {
         const lineGeometry = new THREE.BufferGeometry().setFromPoints(points);
         const line = new THREE.Line(
           lineGeometry,
-          new THREE.LineBasicMaterial({ color: "#00FFFF", opacity: opacity })
+          new THREE.LineBasicMaterial({ color: "#02FFB3", opacity: opacity })
         );
         lines.push(line);
 
-        // Create small sphere at vertex
+        // Update vertex sphere size to scale with radius
         const vertexSphere = new THREE.Mesh(
-          new THREE.SphereGeometry(0.04, 8, 8),
-          new THREE.MeshBasicMaterial({ color: "#00FFFF" })
+          new THREE.SphereGeometry(radius * 0.01, 8, 8),
+          new THREE.MeshBasicMaterial({ color: "#02FFB3" })
         );
         vertexSphere.position.copy(vertex);
         vertexSpheres.push(vertexSphere);
@@ -72,7 +71,7 @@ function WireSphere({ radius, opacity, depth }) {
       lines.forEach((line) => outerSphereRef.current.remove(line));
       vertexSpheres.forEach((sphere) => outerSphereRef.current.remove(sphere));
     };
-  }, [spherePositions]);
+  }, [spherePositions, radius]); // Add radius as dependency
 
   useFrame(() => {
     outerSphereRef.current.rotation.y += 0.003;
@@ -80,17 +79,17 @@ function WireSphere({ radius, opacity, depth }) {
   });
 
   return (
-    <group className="mr-[10rem] mt-[10rem] w-auto h-screen">
+    <group className="w-full h-screen">
       <mesh ref={outerSphereRef}>
         <icosahedronGeometry args={[radius, depth]} />
-        <meshBasicMaterial wireframe color="#00FFFF" />
+        <meshBasicMaterial wireframe color="#02FFB3" />
       </mesh>
 
-      {/* Add three small spheres */}
+      {/* Update small spheres size */}
       {spherePositions.map((position, index) => (
         <mesh key={index} position={position}>
-          <sphereGeometry args={[0.05, 16, 16]} />
-          <meshBasicMaterial color="#00FFFF" />
+          <sphereGeometry args={[radius * 0.025, 16, 16]} />
+          <meshBasicMaterial color="#02FFB3" />
         </mesh>
       ))}
     </group>
@@ -99,7 +98,7 @@ function WireSphere({ radius, opacity, depth }) {
 
 export default function SphereBackground({ radius, opacity, depth }) {
   return (
-    <div id="canvas-container" className="w-full h-[100vh] opacity-40">
+    <div id="canvas-container" className="w-full h-screen opacity-40">
       <Canvas>
         <WireSphere radius={radius} opacity={opacity} depth={depth}/>
       </Canvas>

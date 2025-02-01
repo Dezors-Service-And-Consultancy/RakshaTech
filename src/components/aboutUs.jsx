@@ -2,6 +2,7 @@ import React from "react";
 export default function AboutUs({ left, image }) {
   return (
     <div
+    id = "about"
       className={`flex ${
         left ? "flex-row" : "flex-row-reverse"
       } justify-between items-center w-[90vw] h-[40vh] pl-[7rem]`}
