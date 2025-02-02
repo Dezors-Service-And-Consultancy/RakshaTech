@@ -14,7 +14,7 @@ export default {
         playw:"Playwrite VN",
       },
       screens:{
-        'xs':'360px'
+        'xs':'376px',
       }
     },
   },

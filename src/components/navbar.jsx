@@ -75,8 +75,8 @@ const Navbar = () => {
 
       {/* Collapsible Menu for Small and Medium Screens */}
       {isOpen && (
-        <ul className="absolute opacity-55  min-h-[20.5vh] top-[5.6vh] md:top-[6vh] xs:top-[5.8vh] left-0 w-full bg-black text-white flex flex-col items-center lg:hidden gap-2 px-4">
-          {["About", "Schedule", "FAQ", "Sponsor", "Contact Us"].map((link) => (
+        <ul className="absolute min-h-[20.5vh] top-[5.6vh] max-xs:top-[6.5vh] md:top-[6vh] left-0 w-full bg-black text-white flex flex-col items-center lg:hidden gap-2 px-4">
+          {["About", "Schedule", "FAQ", "Sponsor", "ContactUs"].map((link) => (
             <li key={link} className="w-full text-center">
               <a
                 href={`#${link.toLowerCase()}`}

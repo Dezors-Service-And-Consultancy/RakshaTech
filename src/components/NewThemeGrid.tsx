@@ -28,7 +28,7 @@ const NewThemeGrid = () => {
   };
 
   return (
-    <div className="w-full mx-[4vw] grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4  transition-all duration-500 ease-in-out">
+    <div className="w-full mx-[4vw] max-md:mr-11 grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4  transition-all duration-500 ease-in-out">
       {themes.map((theme, index) => (
         <div key={index} className={`cursor-pointer relative p-4 mx-auto my-4 ${flippedIndex === index ? 'z-10' : 'z-0'}`} onClick={() => handleFlip(index)}>
           <div className={`h-[150px] w-[150px] md:w-[160px] md:h-[160px] lg:w-[200px] lg:h-[200px] rounded-[5px] opacity-40 filter relative bg-gradient-to-b from-[#02DDA0] to-[#013326] z-0 transition-transform duration-300 ${flippedIndex === index ? 'transform rotate-y-180' : ''}`} />
