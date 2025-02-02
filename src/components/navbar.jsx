@@ -10,6 +10,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full pr-4 md:pr-8 lg:pr-16  text-white flex items-center justify-between z-40">
       {/* Logo */}
+
       <div className="flex items-center">
         <div className="h-[80px] w-[80px] md:h-[100px] md:w-[100px] lg:h-[120px] lg:w-[120px] z-50 rounded-full flex justify-center items-center">
           <img
@@ -19,7 +20,6 @@ const Navbar = () => {
           />
         </div>
       </div>
-
       {/* Menu + Buttons Container */}
       <div className="backdrop-blur-lg fixed top-0 left-0 w-full px-4 md:px-8 lg:pr-16 flex items-center justify-end  bg-black bg-opacity-55 space-x-4 md:space-x-8">
         {/* Inline Links for Large Screens */}
@@ -75,8 +75,8 @@ const Navbar = () => {
 
       {/* Collapsible Menu for Small and Medium Screens */}
       {isOpen && (
-        <ul className="absolute opacity-55  min-h-[20.5vh] top-[5.6vh] md:top-[6vh] xs:top-[5.8vh] left-0 w-full bg-black text-white flex flex-col items-center lg:hidden gap-2 px-4">
-          {["About", "Schedule", "FAQ", "Sponsor", "Contact Us"].map((link) => (
+        <ul className="absolute min-h-[20.5vh] top-[5.6vh] max-xs:top-[6.5vh] md:top-[6vh] left-0 w-full bg-black text-white flex flex-col items-center lg:hidden gap-2 px-4">
+          {["About", "Schedule", "FAQ", "Sponsor", "ContactUs"].map((link) => (
             <li key={link} className="w-full text-center">
               <a
                 href={`#${link.toLowerCase()}`}
