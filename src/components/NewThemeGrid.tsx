@@ -28,16 +28,16 @@ const NewThemeGrid = () => {
   };
 
   return (
-    <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4 transition-all duration-500 ease-in-out">
+    <div className="w-full mx-[4vw] max-md:mr-11 grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4  transition-all duration-500 ease-in-out">
       {themes.map((theme, index) => (
         <div key={index} className={`cursor-pointer relative p-4 mx-auto my-4 ${flippedIndex === index ? 'z-10' : 'z-0'}`} onClick={() => handleFlip(index)}>
-          <div className={`w-[239.5px] h-[262px] rounded-[5px] opacity-40 filter relative bg-gradient-to-b from-[#02DDA0] to-[#013326] z-0 transition-transform duration-300 ${flippedIndex === index ? 'transform rotate-y-180' : ''}`} />
+          <div className={`h-[150px] w-[150px] md:w-[160px] md:h-[160px] lg:w-[200px] lg:h-[200px] rounded-[5px] opacity-40 filter relative bg-gradient-to-b from-[#02DDA0] to-[#013326] z-0 transition-transform duration-300 ${flippedIndex === index ? 'transform rotate-y-180' : ''}`} />
           <div className={`absolute inset-0 flex flex-col items-center justify-center z-10 transition-all duration-500 ${flippedIndex === index ? 'opacity-0' : 'opacity-100'}`}>
-            <img src={theme.icon} alt={theme.label} className="w-16 h-16" />
-            <div className="mt-2 text-center text-white font-bold">{theme.label}</div>
+            <img src={theme.icon} alt={theme.label} className="w-[2rem] h-[2rem]" />
+            <div className="mt-2text-center text-white font-bold">{theme.label}</div>
           </div>
-          <div className={`m-auto p-auto h-[200px] w-[200px] absolute inset-0 flex flex-col items-center justify-center z-10 ${flippedIndex === index ? 'opacity-100' : 'opacity-0'}`}>
-            <div className="text-white">{theme.about}</div>
+          <div className={`m-auto p-auto  h-[150px] w-[150px] md:w-[160px] md:h-[160px] lg:w-[200px] lg:h-[200px] object-contain absolute inset-0 flex flex-col items-center justify-center z-10 ${flippedIndex === index ? 'opacity-100' : 'opacity-0'}`}>
+            <div className="px-4 text-center text-sm text-white">{theme.about}</div>
           </div>
         </div>
       ))}

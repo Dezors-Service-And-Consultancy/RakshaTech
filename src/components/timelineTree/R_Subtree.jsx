@@ -1,34 +1,28 @@
 import React from "react";
 
 export default function R_SubTree() {
-  return (
-    <div className="flex flex-row justify-center h-[60vh]">
-      <div className=" flex-col flex justify-center gap-20">
-        <div className="flex flex-row-reverse justify-center items-center">
+  return ( 
+    <div className="flex flex-row min-h-[60vh] min-w-[0vw]">
+      <div className="flex items-stretch min-w-[20vw]  items-center flex-row-reverse">
+        <div className="h-[.8rem] w-[.8rem] rounded-full bg-[#1B804E]"></div>
+        <div className="h-[.2rem] w-[20vw] bg-[#1B804E]"></div>
+        <button className="bg-[#1B804E] text-white font-bold py-2 px-4 rounded w-[12rem] overflow-hidden">
+          Registeration start
+        </button>
+      </div>
+      <div className="items-stretch w-[.2rem] bg-[#1B804E]"></div>
+      <div className="flex items-stretch min-w-[20vw]  flex-col justify-between py-3">
+        <div className="min-h-[0vh] justify-stretch flex flex-row items-center">
           <div className="h-[.8rem] w-[.8rem] rounded-full bg-[#1B804E]"></div>
           <div className="h-[.2rem] w-[20vw] bg-[#1B804E]"></div>
-          <button className="bg-[#1B804E] text-white font-bold py-2 px-4 rounded">
-            Registeration start
-          </button>
-        </div>
-      </div>
-
-      <div className="flex">
-        <div className="h-[100%] w-[.2rem] bg-[#1B804E]"></div>
-      </div>
-
-      <div className=" flex-col flex justify-center gap-64">
-        <div className="flex flex-row justify-center items-center">
-          <div className="h-[.8rem] w-[.8rem] rounded-full bg-[#1B804E]"></div>
-          <div className="h-[.2rem] w-[20vw] bg-[#1B804E]"></div>
-          <button className="bg-[#1B804E] text-white font-bold py-2 px-4 rounded">
+          <button className="bg-[#1B804E] text-white font-bold py-2 px-4 rounded w-[12rem] overflow-hidden">
             Information session
           </button>
         </div>
-        <div className="flex flex-row justify-center items-center">
+        <div className="min-h-[0vh] justify-stretch flex flex-row items-center">
           <div className="h-[.8rem] w-[.8rem] rounded-full bg-[#1B804E]"></div>
           <div className="h-[.2rem] w-[20vw] bg-[#1B804E]"></div>
-          <button className="bg-[#1B804E] text-white font-bold py-2 px-4 rounded">
+          <button className="bg-[#1B804E] text-white font-bold py-2 px-4 rounded w-[12rem] overflow-hidden">
             Registration closed
           </button>
         </div>

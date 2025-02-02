@@ -36,7 +36,7 @@ export default function Faq() {
     setshowSelectedQ(index == showSelectedQ ? null : index);
   }
   return (
-    <div className="h-screen p-40 bg-neutral-950 text-slate-50">
+    <div id = "faq" className="min-h-fit p-20 max-md:p-5 overflow-y-hidden bg-neutral-950 text-slate-50">
       <div className="space-y-12">
         <h1 className="text-[1.82rem] font-bold mb-8">Frequently Asked Questions</h1>
         <div>

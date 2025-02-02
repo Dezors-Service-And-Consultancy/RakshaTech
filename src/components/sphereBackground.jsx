@@ -1,4 +1,3 @@
-import { createRoot } from "react-dom/client";
 import { Canvas } from "@react-three/fiber";
 import { useFrame } from "@react-three/fiber";
 import { useRef, useMemo } from "react";
@@ -50,14 +49,14 @@ function WireSphere({ radius, opacity, depth }) {
         const lineGeometry = new THREE.BufferGeometry().setFromPoints(points);
         const line = new THREE.Line(
           lineGeometry,
-          new THREE.LineBasicMaterial({ color: "#00FFFF", opacity: opacity })
+          new THREE.LineBasicMaterial({ color: "#02FFB3", opacity: opacity })
         );
         lines.push(line);
 
         // Update vertex sphere size to scale with radius
         const vertexSphere = new THREE.Mesh(
           new THREE.SphereGeometry(radius * 0.01, 8, 8),
-          new THREE.MeshBasicMaterial({ color: "#00FFFF" })
+          new THREE.MeshBasicMaterial({ color: "#02FFB3" })
         );
         vertexSphere.position.copy(vertex);
         vertexSpheres.push(vertexSphere);
@@ -83,14 +82,14 @@ function WireSphere({ radius, opacity, depth }) {
     <group className="w-full h-screen">
       <mesh ref={outerSphereRef}>
         <icosahedronGeometry args={[radius, depth]} />
-        <meshBasicMaterial wireframe color="#00FFFF" />
+        <meshBasicMaterial wireframe color="#02FFB3" />
       </mesh>
 
       {/* Update small spheres size */}
       {spherePositions.map((position, index) => (
         <mesh key={index} position={position}>
           <sphereGeometry args={[radius * 0.025, 16, 16]} />
-          <meshBasicMaterial color="#00FFFF" />
+          <meshBasicMaterial color="#02FFB3" />
         </mesh>
       ))}
     </group>
