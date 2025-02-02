@@ -2,7 +2,7 @@ import React from "react";
 
 export default function R_SubTree() {
   return (
-    <div className="flex flex-row justify-center h-[60vh]">
+    <div className="flex flex-row justify-center w-[100vw] h-[60vh]">
       <div className=" flex-col flex justify-center gap-20">
         <div className="flex flex-row-reverse justify-center items-center">
           <div className="h-[.8rem] w-[.8rem] rounded-full bg-[#1B804E]"></div>

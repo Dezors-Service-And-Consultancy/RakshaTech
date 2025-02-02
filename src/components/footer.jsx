@@ -31,7 +31,7 @@ export default function Footer() {
             Drop us a Line
           </h1>
         </div>
-        <div className="h-[15rem] w-full   pt-10 gap-10 pl-8">
+        <div className="h-[15rem] w-full  pt-10 gap-10 pl-8 pr-8">
           <div className="flex flex-col items-center gap-14 w-full p-4 ">
             <div className="flex w-full gap-4">
               <input
