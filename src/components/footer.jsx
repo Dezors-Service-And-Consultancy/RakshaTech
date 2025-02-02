@@ -1,27 +1,27 @@
 import React from "react";
 export default function Footer() {
   return (
-    <div id="contactus" className="flex flex-row min-h-[27rem] w-auto  border-white items-center ">
-      <div className="flex flex-col h-full w-[20%]   justify-center items-center p-10">
+    <div className="flex flex-row min-h-[27rem] w-auto  border-white items-center ">
+      <div className="flex flex-col h-full w-[20%]   justify-left items-left p-10">
         <div className="mb-10">
           <h1 className="text-white font-quantico text-xl">Phone</h1>
-          <h3 className="text-white font-thin">1332412321321</h3>
-          <h3 className="text-white font-thin">1332412321321</h3>
+          <h3 className="text-white font-thin">+91 8195912848</h3>
+          {/* <h3 className="text-white font-thin">1332412321321</h3> */}
         </div>
         <div className=" mb-10">
           <h1 className="text-white font-quantico text-xl">Address</h1>
-          <h3 className="text-white font-thin">1332412321321</h3>
-          <h3 className="text-white font-thin">1332412321321</h3>
+          <h3 className="text-white font-thin">Chennai, Tamil Nadu-600127</h3>
+          {/* <h3 className="text-white font-thin">1332412321321</h3> */}
         </div>
         <div className=" mb-10">
           <h1 className="text-white font-quantico text-xl">Email</h1>
-          <h3 className="text-white font-thin">1332412321321</h3>
-          <h3 className="text-white font-thin">1332412321321</h3>
+          <h3 className="text-white font-thin">jashandangjjsd@gmail.com</h3>
+          {/* <h3 className="text-white font-thin">1332412321321</h3> */}
         </div>
         <div className="">
           <h1 className="text-white font-quantico text-xl">Social</h1>
-          <h3 className="text-white font-thin">1332412321321</h3>
-          <h3 className="text-white font-thin">1332412321321</h3>
+          <h3 className="text-white font-thin">Jashan_Dang</h3>
+          {/* <h3 className="text-white font-thin">1332412321321</h3> */}
         </div>
       </div>
 

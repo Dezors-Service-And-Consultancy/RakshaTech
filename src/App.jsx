@@ -13,6 +13,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Registration from "./Registration"
 
 
+
 export default function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
