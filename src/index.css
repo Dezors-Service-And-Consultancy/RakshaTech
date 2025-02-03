@@ -22,12 +22,12 @@ body{
 }
 ::-webkit-scrollbar-track{
     margin-block: 1rem;
-    border: 1px solid lightgreen; 
-    border-radius: 0.5rem;
+    border: 1px solid rgba(144, 238, 144, 0.623); 
+    border-radius: 0.25rem;
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: #0aaf56;
-    border-radius: 5rem;
+    background-color: #0aaf56ee;
+    border-radius: 3rem;
     border:2px solid black
 }
