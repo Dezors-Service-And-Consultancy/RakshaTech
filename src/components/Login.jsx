@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import "../Registration.css";
 import logo from "../../public/Logo.png";
@@ -51,9 +52,9 @@ export default function Login() {
 
   return (
     <section className="logincontainer space-y-6">
-      <div className="absolute h-[80px] w-[80px] md:h-[100px] md:w-[100px] lg:h-[120px] lg:w-[120px] left-0 top-0">
+       <Link to="/" className="absolute h-[80px] w-[80px] md:h-[100px] md:w-[100px] lg:h-[120px] lg:w-[120px] left-0 top-0">
         <img src={logo} alt="logo" className="h-full w-full object-contain" />
-      </div>
+      </Link>
       <h2 className="hackathon-text z-10 text-white opacity-10 md:opacity-25 lg:opacity-50 rotate-90">
         HACKATHON
       </h2>
