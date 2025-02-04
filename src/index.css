@@ -18,16 +18,22 @@ body{
 
 ::-webkit-scrollbar{
     background-color: transparent;
-    width:.8rem;
+    width:.75rem;
 }
 ::-webkit-scrollbar-track{
     margin-block: 1rem;
-    border: 1px solid lightgreen; 
-    border-radius: 1rem;
+    border: 1px solid rgba(144, 238, 144, 0.623); 
+    border-radius: 0.25rem;
 }
 
 ::-webkit-scrollbar-thumb{
+<<<<<<< HEAD
     background-color: darkgreen;
     border-radius: 10rem;
     border:1px solid black;
+=======
+    background-color: #0aaf56ee;
+    border-radius: 3rem;
+    border:2px solid black
+>>>>>>> 3bedbc6d4b669940c48c9d4c3a128937cbeb5e84
 }
