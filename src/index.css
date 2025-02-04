@@ -29,5 +29,5 @@ body{
 ::-webkit-scrollbar-thumb{
     background-color: darkgreen;
     border-radius: 10rem;
-    border:1px solid black
+    border:1px solid black;
 }

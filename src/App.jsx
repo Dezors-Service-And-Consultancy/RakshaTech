@@ -10,9 +10,8 @@ import NewThemeGrid from "./components/NewThemeGrid";
 import NameCard from "./components/namecard";
 import SphereBackground from "./components/sphereBackground";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Registration from "./Registration"
-
-
+import Registration from "./Registration";
+import Particle from "./components/particles";
 
 export default function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -121,6 +120,9 @@ export default function App() {
                 <div>
                   <Footer />
                 </div>
+              </div>
+              <div className="md:hidden">
+                <Particle />
               </div>
             </div>
           }
