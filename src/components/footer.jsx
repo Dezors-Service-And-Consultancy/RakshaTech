@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="mb-10">
             <h1 className="text-white font-quantico text-xl">Phone</h1>
             <h3 className="text-white font-thin max-md:text-nowrap">+91 8195912848</h3>
-            {/* <h3 className="text-white font-thin">1332412321321</h3> */}
+            <h3 className="text-white font-thin">+91 8217336608</h3>
           </div>
           <div className=" mb-10 max-md:text-right">
             <h1 className="text-white font-quantico text-xl">Address</h1>
@@ -22,7 +22,7 @@ export default function Footer() {
           <div className=" mb-10">
             <h1 className="text-white font-quantico text-xl">Email</h1>
             <h3 className="text-white font-thin">jashandangjjsd@gmail.com</h3>
-            {/* <h3 className="text-white font-thin">1332412321321</h3> */}
+            <h3 className="text-white font-thin">arya2004nyadav@gmail.com</h3>
           </div>
           <div className="max-md:text-right">
             <h1 className="text-white font-quantico text-xl">Social</h1>
