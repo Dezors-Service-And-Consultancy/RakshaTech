@@ -29,12 +29,8 @@ export default function Particle() {
             fpsLimit: 120,
             interactivity: {
               events: {
-                onClick: {
-                  enable: true,
-                  mode: "push",
-                },
                 onHover: {
-                  enable: true,
+                  enable: false,
                   mode: "repulse",
                 },
                 resize: true,
@@ -73,9 +69,9 @@ export default function Particle() {
               number: {
                 density: {
                   enable: true,
-                  area: 800,
+                  area: 1,
                 },
-                value: 160,
+                value: 300,
               },
               opacity: {
                 value: 0.5,
