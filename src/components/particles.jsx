@@ -52,7 +52,7 @@ export default function Particle() {
               links: {
                 color: "#e0f2fe",
                 distance: 150,
-                enable: true,
+                enable: false,
                 opacity: 0.5,
                 width: 1,
               },
@@ -80,7 +80,7 @@ export default function Particle() {
                 type: "circle",
               },
               size: {
-                value: { min: 1, max: 5 },
+                value: { min: 1, max: 3},
               },
             },
             detectRetina: true,
