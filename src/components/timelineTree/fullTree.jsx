@@ -1,41 +1,152 @@
 import React from "react";
-import L_SubTree from "./L_SubTree";
-import R_SubTree from "./R_Subtree";
-
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
 export default function FullTree() {
   return (
     <div id="schedule">
-      //! above 768px
-      <div className="max-md:hidden">
-        <R_SubTree />
-        <L_SubTree />
+      <div className="">
+        <VerticalTimeline lineColor="green" layout="2-columns">
+          <VerticalTimelineElement
+            className=""
+            contentStyle={{
+              background: "linear-gradient(to bottom, #007A58, #00B383)",
+              color: "#fff",
+              marginRight: "",
+            }}
+            contentArrowStyle={{ borderRight: "20px solid  white" }}
+            iconStyle={{ background: "#02F6B3", color: "#fff" }}
+          >
+            <h1 className="text-3xl text-black">Event Commencement</h1>
+            <h1 className="text-xl mt-4">commencing of the event</h1>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className=""
+            contentStyle={{
+              background: "linear-gradient(to bottom, #007A58, #00B383)",
+              color: "#fff",
+            }}
+            contentArrowStyle={{ borderRight: "20px solid  white" }}
+            iconStyle={{ background: "#02F6B3", color: "#fff" }}
+          >
+            <h1 className="text-3xl text-black">Event Commencement</h1>
+            <h1 className="text-xl mt-4">commencing of the event</h1>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className=""
+            contentStyle={{
+              background: "linear-gradient(to bottom, #007A58, #00B383)",
+              color: "#fff",
+            }}
+            contentArrowStyle={{ borderRight: "20px solid  white" }}
+            iconStyle={{ background: "#02F6B3", color: "#fff" }}
+          >
+            <h1 className="text-3xl text-black">Event Commencement</h1>
+            <h1 className="text-xl mt-4">commencing of the event</h1>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className=""
+            contentStyle={{
+              background: "linear-gradient(to bottom, #007A58, #00B383)",
+              color: "#fff",
+            }}
+            contentArrowStyle={{ borderRight: "20px solid  white" }}
+            iconStyle={{ background: "#02F6B3", color: "#fff" }}
+          >
+            <h1 className="text-3xl text-black">Event Commencement</h1>
+            <h1 className="text-xl mt-4">commencing of the event</h1>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className=""
+            contentStyle={{
+              background: "linear-gradient(to bottom, #007A58, #00B383)",
+              color: "#fff",
+            }}
+            contentArrowStyle={{ borderRight: "20px solid  white" }}
+            iconStyle={{ background: "#02F6B3", color: "#fff" }}
+          >
+            <h1 className="text-3xl text-black">Event Commencement</h1>
+            <h1 className="text-xl mt-4">commencing of the event</h1>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className=""
+            contentStyle={{
+              background: "linear-gradient(to bottom, #007A58, #00B383)",
+              color: "#fff",
+            }}
+            contentArrowStyle={{ borderRight: "20px solid  white" }}
+            iconStyle={{ background: "#02F6B3", color: "#fff" }}
+          >
+            <h1 className="text-3xl text-black">Event Commencement</h1>
+            <h1 className="text-xl mt-4">commencing of the event</h1>
+          </VerticalTimelineElement>
+        </VerticalTimeline>
       </div>
-      //! below 768px
-      <div className="relative md:hidden  min-h-[130vh] w-screen ">
-        <div className="h-[2rem] w-[2rem] rounded-full bg-[#1B804E] absolute left-[48.2%]"></div>
-        <div className="bg-[#1B804E] absolute h-[100%] rounded-sm w-[.5rem] left-[50%]"></div>
-        <div className="h-[100%] absolute items-center min-w-[60vw] left-[19%] flex flex-col justify-around">
-          <button className="bg-[#1B804E] text-white font-bold py-2 px-4 rounded w-[100%] overflow-hidden">
-            Information Session
-          </button>
-          <button className="bg-[#1B804E]  text-white font-bold py-2 px-4 rounded w-[100%] overflow-hidden">
-            Registeration Start
-          </button>
-          <button className="bg-[#1B804E]  text-white font-bold py-2 px-4 rounded w-[100%] overflow-hidden">
-            Registeration Closed
-          </button>
-          <button className="bg-[#1B804E] text-white font-bold py-2 px-4 rounded w-[100%] overflow-hidden">
-            First Evaluation Round
-          </button>
-          <button className="bg-[#1B804E] text-white font-bold py-2 px-4 rounded w-[100%] overflow-hidden">
-            Event Commencement
-          </button>
-          <button className="bg-[#1B804E] text-white font-bold py-2 px-4 rounded w-[100%] overflow-hidden">
-            Second Evaluation Round
-          </button> 
-        </div>
-        <div className="h-[2rem] w-[2rem] rounded-full bg-[#1B804E] absolute left-[48.2%] top-[98%]"></div>
-      </div>
+
+      {/* <div className="md:hidden">
+        <VerticalTimeline lineColor="green" layout="1-columns-right">
+          <VerticalTimelineElement
+            className=""
+            contentStyle={{
+              background: "green",
+              color: "#fff",
+              marginRight: "",
+            }}
+            contentArrowStyle={{ borderRight: "20px solid  white" }}
+            iconStyle={{ background: "green", color: "#fff" }}
+          >
+            <h1 className="text-3xl text-black">Event Commencement</h1>
+            <h1 className="text-xl mt-4">commencing of the event</h1>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className=""
+            contentStyle={{ background: "green", color: "#fff" }}
+            contentArrowStyle={{ borderRight: "20px solid  white" }}
+            iconStyle={{ background: "green", color: "#fff" }}
+          >
+            <h1 className="text-3xl text-black">Event Commencement</h1>
+            <h1 className="text-xl mt-4">commencing of the event</h1>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className=""
+            contentStyle={{ background: "green", color: "#fff" }}
+            contentArrowStyle={{ borderRight: "20px solid  white" }}
+            iconStyle={{ background: "green", color: "#fff" }}
+          >
+            <h1 className="text-3xl text-black">Event Commencement</h1>
+            <h1 className="text-xl mt-4">commencing of the event</h1>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className=""
+            contentStyle={{ background: "green", color: "#fff" }}
+            contentArrowStyle={{ borderRight: "20px solid  white" }}
+            iconStyle={{ background: "green", color: "#fff" }}
+          >
+            <h1 className="text-3xl text-black">Event Commencement</h1>
+            <h1 className="text-xl mt-4">commencing of the event</h1>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className=""
+            contentStyle={{ background: "green", color: "#fff" }}
+            contentArrowStyle={{ borderRight: "20px solid  white" }}
+            iconStyle={{ background: "green", color: "#fff" }}
+          >
+            <h1 className="text-3xl text-black">Event Commencement</h1>
+            <h1 className="text-xl mt-4">commencing of the event</h1>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className=""
+            contentStyle={{ background: "green", color: "#fff" }}
+            contentArrowStyle={{ borderRight: "20px solid  white" }}
+            iconStyle={{ background: "green", color: "#fff" }}
+          >
+            <h1 className="text-3xl text-black">Event Commencement</h1>
+            <h1 className="text-xl mt-4">commencing of the event</h1>
+          </VerticalTimelineElement>
+        </VerticalTimeline>
+      </div> */}
     </div>
   );
 }
