@@ -10,9 +10,8 @@ import NewThemeGrid from "./components/NewThemeGrid";
 import NameCard from "./components/namecard";
 import SphereBackground from "./components/sphereBackground";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Registration from "./Registration"
-
-
+import Registration from "./Registration";
+import Particle from "./components/particles";
 
 export default function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -82,7 +81,7 @@ export default function App() {
                   <Catch />
                 </div>
 
-                <div className="mb-[5rem] flex flex-col max-md:gap-20 max-md:mb-40 ">
+                <div className="mb-[5rem] flex flex-col max-md:gap-20 max-md:mb-[6rem]">
                   <AboutUs image="/code-dar.png" left="left" />
                   <AboutUs image="/coder.png" />
                 </div>
@@ -104,7 +103,7 @@ export default function App() {
                     />
                   </div>
                 </div>
-                <div className="mb-[5rem] w-screen h-fit flex justify-center items-center">
+                <div className="mb-[5rem] w-screen h-fit  justify-center items-center ">
                   <FullTree />
                 </div>
                 <div className="flex flex-col items-center justify-center p-4 m-4 mb-[5rem]">
@@ -121,6 +120,9 @@ export default function App() {
                 <div>
                   <Footer />
                 </div>
+              </div>
+              <div className="md:hidden">
+                <Particle />
               </div>
             </div>
           }

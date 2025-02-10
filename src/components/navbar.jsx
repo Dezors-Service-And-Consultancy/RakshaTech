@@ -30,7 +30,7 @@ const Navbar = () => {
             <li key={link}>
               <a
                 href={`#${link.toLowerCase()}`}
-                className="px-2 py-1 md:px-4 md:py-2 lg:px-6 lg:py-3 rounded-md transition hover:text-lg duration-1000"
+                className="px-2 py-1 md:px-4 md:py-2 lg:px-6 lg:py-3 rounded-md transition hover:bg-gradient-to-r from-[#044127] via-[#0c5636] to-[#044127] hover:font-semibold hover:text-white  hover:duration-1000"
               >
                 {link}
               </a>
@@ -41,13 +41,13 @@ const Navbar = () => {
         {/* Submissions and Login Buttons (Always on the Right) */}
         <a
           href="#submissions"
-          className="px-4 py-2 lg:px-6 lg:py-3 rounded-md bg-gradient-to-r from-[#36543df9] via-[#0c5636] to-[#0AAF56]"
+          className="px-4 py-2 lg:px-6 lg:py-3 rounded-md bg-gradient-to-r from-[#36543df9] via-[#0c5636] to-[#0AAF56] hover:font-semibold"
         >
           Submissions
         </a>
         <Link
           to="/users/register"
-          className="px-4 py-2 lg:px-6 lg:py-3 rounded-[.5rem] border-2 border-[#007A58] bg-black text-[#007A58] hover:border-gradient-to-br hover:from-[#02F6B3] hover:to-[#007A58] transition duration-300 xs:mt-[.07rem] md:mt-[0rem] whitespace-nowrap overflow-hidden"
+          className="px-4 py-2 lg:px-6 lg:py-3 rounded-[.5rem] border-2 border-[#007A58] bg-black text-[#007A58] hover:border-gradient-to-br hover:from-[#02F6B3] hover:to-[#007A58] transition duration-300 xs:mt-[.07rem] md:mt-[0rem] whitespace-nowrap hover:font-semibold overflow-hidden"
         >
           Log in
         </Link>
@@ -76,12 +76,12 @@ const Navbar = () => {
 
       {/* Collapsible Menu for Small and Medium Screens */}
       {isOpen && (
-        <ul className="absolute backdrop-blur-lg opacity-75 min-h-[20.5vh] top-[5.6vh] md:top-[6vh] xs:top-[6vh] left-0 w-full bg-black text-white flex flex-col lg:hidden gap-y-2 px-4">
+        <ul className="absolute  min-h-[20.5vh] top-[6vh] md:top-[6vh] xs:top-[6vh] left-0  flex flex-col lg:hidden">
           {["About", "Schedule", "FAQ", "Sponsor", "Contact Us"].map((link) => (
             <li key={link} className="w-full text-center ">
               <a
                 href={`#${link.toLowerCase()}`}
-                className="block px-4 py-1 rounded-md transition hover:text-lg ease-in-out duration-1000"
+                className="block text-slate-300 w-[100vw] bg-black hover:bg-gradient-to-r from-black via-[#0c5636] to-black  backdrop-blur-lg bg-opacity-85 px-4 py-1 hover:font-semibold hover:text-white rounded-md "
               >
                 {link}
               </a>
