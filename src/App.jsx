@@ -12,6 +12,8 @@ import SphereBackground from "./components/sphereBackground";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Registration from "./Registration";
 import Particle from "./components/particles";
+import PrivateRoute from "../backend/utils/privateRoute";
+import Dashboard from "./Dash";
 
 export default function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -128,6 +130,10 @@ export default function App() {
           }
         />
         <Route path="/users/register" element={<Registration />} />
+        <Route path="/dashboard/*" element={<Dashboard />}>
+        {/* <Route path="events" element={<Events />} />
+        <Route path="teams" element={<Teams />} /> */}
+        </Route>
       </Routes>
     </Router>
   );
