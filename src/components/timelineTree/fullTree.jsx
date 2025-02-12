@@ -8,7 +8,7 @@ export default function FullTree() {
   return (
     <div id="schedule">
       <div className="">
-        <VerticalTimeline lineColor="green" layout="2-columns">
+        <VerticalTimeline lineColor="#02F6B3" layout="2-columns">
           <VerticalTimelineElement
             className=""
             contentStyle={{
