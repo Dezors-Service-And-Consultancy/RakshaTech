@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import GradientRectangle from './comp/GradientRectangle';
 import icon1 from '/asset/icon-user.png';
 import icon2 from '/asset/icon-drone.png';
 import icon3 from '/asset/icon-car.png';

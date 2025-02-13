@@ -5,7 +5,6 @@ import EditIcon from "../../public/asset/edit.png";
 import { useState } from "react";
 
 const MainArea = () => {
-  const location = useLocation();
   const [selectedTeam, setSelectedTeam] = useState("");
 
   return (
