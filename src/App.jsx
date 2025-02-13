@@ -12,7 +12,6 @@ import SphereBackground from "./components/sphereBackground";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Registration from "./Registration";
 import Particle from "./components/particles";
-import PrivateRoute from "../backend/utils/privateRoute";
 import Dashboard from "./Dash";
 
 export default function App() {

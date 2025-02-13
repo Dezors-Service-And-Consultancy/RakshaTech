@@ -7,9 +7,7 @@ const Dashboard = () => {
   return (
     <div className="min-h-screen">
       <Topbar />
-
       <Sidebar />
-
       <MainArea />
     </div>
   );
