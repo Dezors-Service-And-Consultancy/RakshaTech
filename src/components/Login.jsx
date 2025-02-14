@@ -64,7 +64,7 @@ export default function Login() {
         </h1>
         <div className=" w-[350px] h-[300px] sm:w-[400px] sm-[410.6px] md:w-[486.86px] md:h-[517.17px] flex flex-row items-center justify-center">
           <div className="glassmorphism py-[1rem] px-[3rem] w-full rounded-lg">
-            <div className="t-[1rem] mt-[1rem] mb-[1rem] md:mt-[1.5rem] md:mb-[1.5rem]">
+            <div className="mt-[1rem] mb-[1rem] md:mt-[1.5rem] md:mb-[1.5rem]">
               <form className="space-y-3 md:space-y-5" onSubmit={handleSubmit}>
                 <div>
                   <input
