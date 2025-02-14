@@ -52,7 +52,10 @@ export default function Login() {
 
   return (
     <section className="logincontainer space-y-6">
-       <Link to="/" className="absolute h-[80px] w-[80px] md:h-[100px] md:w-[100px] lg:h-[120px] lg:w-[120px] left-0 top-0">
+      <Link
+        to="/"
+        className="absolute h-[80px] w-[80px] md:h-[100px] md:w-[100px] lg:h-[120px] lg:w-[120px] left-0 top-0"
+      >
         <img src={logo} alt="logo" className="h-full w-full object-contain" />
       </Link>
       <h2 className="hackathon-text z-10 text-white opacity-10 md:opacity-25 lg:opacity-50 rotate-90">
@@ -168,12 +171,15 @@ export default function Login() {
                     )}
                   </div>
                 </div>
-                <button
-                  type="submit"
-                  className="w-full text-white bg-primary-600 hover:bg-primary-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
-                >
-                  Create an account
-                </button>
+                <Link to="/user/register/dashboard/">
+                  <button
+                    type="submit"
+                    className="w-full text-white bg-primary-600 hover:bg-primary-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
+                  >
+                    Create an account
+                  </button>
+                </Link>
+
                 <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                   Already have an account?{" "}
                   <a

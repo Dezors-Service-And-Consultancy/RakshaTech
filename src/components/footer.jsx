@@ -15,7 +15,6 @@ export default function Footer() {
           <div className=" mb-10 max-md:text-right">
             <h1 className="text-white font-quantico text-xl">Address</h1>
             <h3 className="text-white font-thin max-md:text-nowrap">Chennai, Tamil Nadu-600127</h3>
-            {/* <h3 className="text-white font-thin">1332412321321</h3> */}
           </div>
         </div>
         <div className=" flex flex-row md:flex-col  max-md:gap-11 justify-between">
@@ -27,7 +26,6 @@ export default function Footer() {
           <div className="max-md:text-right">
             <h1 className="text-white font-quantico text-xl">Social</h1>
             <h3 className="text-white font-thin">Jashan_Dang</h3>
-            {/* <h3 className="text-white font-thin">1332412321321</h3> */}
           </div>
         </div>
       </div>
