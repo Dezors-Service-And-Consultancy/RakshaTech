@@ -26,7 +26,6 @@ export default function Footer() {
           <div className="max-md:text-right flex flex-col items-center mr-16">
             <h1 className="text-white font-quantico text-xl">Social</h1>
             <h3 className="text-white font-thin">Jashan_Dang</h3>
-            {/* <h3 className="text-white font-thin">1332412321321</h3> */}
           </div>
         </div>
       </div>

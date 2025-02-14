@@ -8,7 +8,7 @@ export default function FullTree() {
   return (
     <div id="schedule">
       <div className="">
-        <VerticalTimeline lineColor="green" layout="2-columns">
+        <VerticalTimeline lineColor="#02F6B3" layout="2-columns">
           <VerticalTimelineElement
             className=""
             contentStyle={{
@@ -85,68 +85,6 @@ export default function FullTree() {
         </VerticalTimeline>
       </div>
 
-      {/* <div className="md:hidden">
-        <VerticalTimeline lineColor="green" layout="1-columns-right">
-          <VerticalTimelineElement
-            className=""
-            contentStyle={{
-              background: "green",
-              color: "#fff",
-              marginRight: "",
-            }}
-            contentArrowStyle={{ borderRight: "20px solid  white" }}
-            iconStyle={{ background: "green", color: "#fff" }}
-          >
-            <h1 className="text-3xl text-black">Event Commencement</h1>
-            <h1 className="text-xl mt-4">commencing of the event</h1>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className=""
-            contentStyle={{ background: "green", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "20px solid  white" }}
-            iconStyle={{ background: "green", color: "#fff" }}
-          >
-            <h1 className="text-3xl text-black">Event Commencement</h1>
-            <h1 className="text-xl mt-4">commencing of the event</h1>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className=""
-            contentStyle={{ background: "green", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "20px solid  white" }}
-            iconStyle={{ background: "green", color: "#fff" }}
-          >
-            <h1 className="text-3xl text-black">Event Commencement</h1>
-            <h1 className="text-xl mt-4">commencing of the event</h1>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className=""
-            contentStyle={{ background: "green", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "20px solid  white" }}
-            iconStyle={{ background: "green", color: "#fff" }}
-          >
-            <h1 className="text-3xl text-black">Event Commencement</h1>
-            <h1 className="text-xl mt-4">commencing of the event</h1>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className=""
-            contentStyle={{ background: "green", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "20px solid  white" }}
-            iconStyle={{ background: "green", color: "#fff" }}
-          >
-            <h1 className="text-3xl text-black">Event Commencement</h1>
-            <h1 className="text-xl mt-4">commencing of the event</h1>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className=""
-            contentStyle={{ background: "green", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "20px solid  white" }}
-            iconStyle={{ background: "green", color: "#fff" }}
-          >
-            <h1 className="text-3xl text-black">Event Commencement</h1>
-            <h1 className="text-xl mt-4">commencing of the event</h1>
-          </VerticalTimelineElement>
-        </VerticalTimeline>
-      </div> */}
     </div>
   );
 }
