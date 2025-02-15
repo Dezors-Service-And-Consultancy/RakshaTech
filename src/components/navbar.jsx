@@ -40,7 +40,7 @@ const Navbar = () => {
 
         {/* Submissions and Login Buttons (Always on the Right) */}
         <Link
-          to="/dashboard"
+          to="/submissions"
           className="px-4 py-2 lg:px-6 lg:py-3 rounded-md bg-gradient-to-r from-[#36543df9] via-[#0c5636] to-[#0AAF56] hover:font-semibold"
         >
           Submissions
