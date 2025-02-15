@@ -4,26 +4,26 @@ export default function Footer() {
     <div
       id="contactus"
       className="flex flex-row max-md:flex-col-reverse min-h-[27rem] w-auto  border-white items-center ">
-      <div className="flex flex-col max-md:w-screen max-md:flex-row min-h-auto min-w-screen  p-10 max-md:p-0 max-md:p-4">
-        <div className="flex flex-row md:flex-col max-md:gap-11 justify-between">
-          <div className="mb-20 flex flex-col items-center md:w-1/2 md:mb-0 ml-16">
+      <div className="flex flex-col max-md:w-screen max-md:flex-row min-h-auto min-w-screen  p-10 max-md:p-0 max-md:p-4 ">
+        <div className=" gap-10 flex flex-row md:flex-col max-md:gap-11 justify-between">
+          <div className="lg:text-right flex flex-col text-center md:w-1/2 md:mb-0  ml-20">
             <h1 className="text-white font-quantico text-xl items-center">Phone</h1>
             <h3 className="text-white font-thin max-md:text-nowrap">+918195912848</h3>
             <h3 className="text-white font-thin">+918217336608</h3>
           </div>
-          <div className=" mb-10 max-md:text-right flex flex-col items-center mr-10">
+          <div className=" mb-10 lg:text-right text-center flex flex-col mr-10">
             <h1 className="text-white font-quantico text-xl">Address</h1>
             <h3 className="text-white font-thin max-md:text-nowrap">Chennai,</h3>
             <h3 className="text-white font-thin">Tamil Nadu-600127</h3>
           </div>
         </div>
-        <div className=" flex flex-row md:flex-col max-md:gap-11 justify-between">
-          <div className=" mb-10 flex flex-col items-center ml-4">
+        <div className="flex flex-row md:flex-col justify-between">
+          <div className="lg:text-right mb-10 flex flex-col text-center mr-10">
             <h1 className="text-white font-quantico text-xl">Email</h1>
-            <h3 className="text-white font-thin ml-3.5">jashandangjjsd@gmail.com</h3>
-            <h3 className="text-white font-thin ml-3.5">arya2004nyadav@gmail.com</h3>
+            <h3 className="text-white font-thin">jashandangjjsd@gmail.com</h3>
+            <h3 className="text-white font-thin">arya2004nyadav@gmail.com</h3>
           </div>
-          <div className="max-md:text-right flex flex-col items-center mr-16">
+          <div className="lg:text-right flex flex-col text-center mr-10">
             <h1 className="text-white font-quantico text-xl">Social</h1>
             <h3 className="text-white font-thin">Jashan_Dang</h3>
           </div>
