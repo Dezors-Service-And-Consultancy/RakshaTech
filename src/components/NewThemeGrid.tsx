@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import icon1 from '/asset/icon-user.png';
-import icon2 from '/asset/icon-drone.png';
-import icon3 from '/asset/icon-car.png';
-import icon4 from '/asset/icon-cart.png';
-import icon5 from '/asset/icon-robot.png';
-import icon6 from '/asset/icon-edu.png';
-import icon7 from '/asset/icon-med.png';
-import icon8 from '/asset/icon-coin.png';
+import icon1 from '/assets/icon-user.png';
+import icon2 from '/assets/icon-drone.png';
+import icon3 from '/assets/icon-car.png';
+import icon4 from '/assets/icon-cart.png';
+import icon5 from '/assets/icon-robot.png';
+import icon6 from '/assets/icon-edu.png';
+import icon7 from '/assets/icon-med.png';
+import icon8 from '/assets/icon-coin.png';
 
 const NewThemeGrid = () => {
   const themes = [

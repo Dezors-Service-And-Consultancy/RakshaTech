@@ -1,9 +1,9 @@
 import SidebarIcon from "./SidebarIcon";
-import CalendarIcon from "../../public/asset/calendar.png";
-import UsersIcon from "../../public/asset/group.png";
-import DocsIcon from "../../public/asset/doc.png";
-import AnnouncementsIcon from "../../public/asset/announcements.png";
-import SettingsIcon from "../../public/asset/settings.png";
+import CalendarIcon from "../../public/assets/calendar.png";
+import UsersIcon from "../../public/assets/group.png";
+import DocsIcon from "../../public/assets/doc.png";
+import AnnouncementsIcon from "../../public/assets/announcements.png";
+import SettingsIcon from "../../public/assets/settings.png";
 import { Link } from "react-router-dom";
 
 const Sidebar = ({ onSectionChange, activeSection }) => {

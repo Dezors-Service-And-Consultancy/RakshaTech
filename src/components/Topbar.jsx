@@ -1,6 +1,6 @@
-import HomeIcon from "../../public/asset/home.png";
-import ProfileIcon from "../../public/asset/user.png";
-import MenuIcon from "../../public/asset/menu.png";
+import HomeIcon from "../../public/assets/home.png";
+import ProfileIcon from "../../public/assets/user.png";
+import MenuIcon from "../../public/assets/menu.png";
 import { Link } from "react-router-dom";
 
 

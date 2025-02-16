@@ -1,6 +1,6 @@
-import AddIcon from "../../public/asset/plus.png";
-import DeleteIcon from "../../public/asset/delete.png";
-import EditIcon from "../../public/asset/edit.png";
+import AddIcon from "../../public/assets/plus.png";
+import DeleteIcon from "../../public/assets/delete.png";
+import EditIcon from "../../public/assets/edit.png";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../Registration.css";
