@@ -69,6 +69,13 @@ export default function Footer() {
           </button>
         </div>
       </div>
+      <div class = "fixed bottom-0 w-full text-center py-2 border-t flex flex-col ">
+      <footer className="">
+      <p className="text-green-500">
+        All rights reserved @ <a href="https://dezors.com" className="hover:underline">dezors.com</a>
+      </p>
+    </footer>
+      </div>
     </div>
   );
 }
