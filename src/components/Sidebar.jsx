@@ -4,7 +4,6 @@ import UsersIcon from "../../public/asset/group.png";
 import DocsIcon from "../../public/asset/doc.png";
 import AnnouncementsIcon from "../../public/asset/announcements.png";
 import SettingsIcon from "../../public/asset/settings.png";
-import { Link } from "react-router-dom";
 
 const Sidebar = ({ onSectionChange, activeSection }) => {
   return (
