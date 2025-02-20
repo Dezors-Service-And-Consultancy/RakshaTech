@@ -1,8 +1,8 @@
 import SidebarIcon from "./SidebarIcon";
-import CalendarIcon from "../../public/asset/calendar.png";
+// import CalendarIcon from "../../public/asset/doc.png";
 import UsersIcon from "../../public/asset/group.png";
 import DocsIcon from "../../public/asset/doc.png";
-import AnnouncementsIcon from "../../public/asset/announcements.png";
+// import AnnouncementsIcon from "../../public/asset/announcements.png";
 import SettingsIcon from "../../public/asset/settings.png";
 
 const Sidebar = ({ onSectionChange, activeSection }) => {
