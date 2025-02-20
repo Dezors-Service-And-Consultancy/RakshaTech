@@ -13,6 +13,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Registration from "./Registration";
 import Particle from "./components/particles";
 import Dashboard from "./Dash";
+import Submissions from "./components/submissions";
+import Submit from "./Submit";
 
 export default function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -129,7 +131,8 @@ export default function App() {
           }
         />
         <Route path="/users/register" element={<Registration />} />
-        <Route path="/dashboard/*" element={<Dashboard />}>
+        <Route path="/submissions" element={<Submit />} />
+        <Route path="/user/register/dashboard/*" element={<Dashboard />}>
         {/* <Route path="events" element={<Events />} />
         <Route path="teams" element={<Teams />} /> */}
         </Route>
