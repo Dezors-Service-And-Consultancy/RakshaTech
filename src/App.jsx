@@ -15,6 +15,7 @@ import Particle from "./components/particles";
 import Dashboard from "./Dash";
 import Submissions from "./components/submissions";
 import Submit from "./Submit";
+import { Helmet } from "react-helmet"; // Importing Helmet for managing meta tags
 
 export default function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -44,87 +45,93 @@ export default function App() {
   return (
     <>
       <Router>
+          <Helmet>
+          <title>Raksha Tech - Your Trusted Technology Partner</title>
+          <meta name="description" content="Raksha Tech provides innovative technology solutions to empower businesses and individuals. We specialize in technology consulting, software development, and IT services." />
+          <meta name="keywords" content="technology, consulting, software development, IT services, Raksha Tech" />
+        </Helmet>
+
         <Routes>
           <Route
             path="/"
             element={
-              <div className="flex flex-row min-h-screen max-w-screen justify-center bg-black z-0 overflow-x-hidden mb-10">
-                <div className="absolute w-screen h-screen z-1 overflow-hidden">
-                  <div className="lg:translate-x-[35rem] max-md:hidden md:translate-x-[20rem] sm:translate-x-[15rem] translate-x-[12rem] lg:translate-y-[-12rem] md:translate-y-[-10rem] sm:translate-y-[-15rem] translate-y-[-8rem]">
+              <section className="flex flex-row min-h-screen max-w-screen justify-center bg-black z-0 overflow-x-hidden mb-10">
+                <section className="absolute w-screen h-screen z-1 overflow-hidden">
+                  <section className="lg:translate-x-[35rem] max-md:hidden md:translate-x-[20rem] sm:translate-x-[15rem] translate-x-[12rem] lg:translate-y-[-12rem] md:translate-y-[-10rem] sm:translate-y-[-15rem] translate-y-[-8rem]">
                     <SphereBackground
                       radius={getRadius(3, 2.5, 2, 1.5)}
                       opacity={0.5}
                       depth={getRadius(3, 2, 1, 1)}
                     />
-                  </div>
-                </div>
-                <div className="absolute w-screen h-screen z-2 overflow-hidden">
-                  <div className="lg:translate-x-[-25rem] max-md:hidden md:translate-x-[-10rem] sm:translate-x-[-20rem] translate-x-[-10rem] lg:translate-y-[-4rem] translate-y-[-2rem] opacity-60">
+                  </section>
+                </section>
+                <section className="absolute w-screen h-screen z-2 overflow-hidden">
+                  <section className="lg:translate-x-[-25rem] max-md:hidden md:translate-x-[-10rem] sm:translate-x-[-20rem] translate-x-[-10rem] lg:translate-y-[-4rem] translate-y-[-2rem] opacity-60">
                     <SphereBackground
                       radius={getRadius(2, 1.75, 1.5, 1)}
                       opacity={0}
                       depth={getRadius(2, 1, 1, 1)}
                     />
-                  </div>
-                </div>
-                <div className="min-h-screen w-screen flex justify-center flex-col z-10 overflow-x-hidden">
-                  <div className="mt-56 z-10 w-full">
+                  </section>
+                </section>
+                <section className="min-h-screen w-screen flex justify-center flex-col z-10 overflow-x-hidden">
+                  <section className="mt-56 z-10 w-full">
                     <Navbar />
-                  </div>
+                  </section>
 
-                  <div className="mb-[5rem] xs:mb-[1rem]">
+                  <section className="mb-[5rem] xs:mb-[1rem]">
                     <RakshatechHeader />
-                  </div>
-                  <div className="flex flex-row max-w-full justify-center items-center min-h-[7rem] gap-[2rem] mb-[4rem] max-xs:w-[21vw] max-xs:ml-[9rem] max-xs:gap-[1rem]">
-                    <img src="/image 5.png" alt="company" />
-                    <img src="/image 6.png" alt="company" />
-                    <img src="./image 7.png" alt="company" />
-                    <img src="./image 8.png" alt="company" />
-                  </div>
-                  <div className="mb-[5rem]">
+                  </section>
+                  <section className="flex flex-row max-w-full justify-center items-center min-h-[7rem] gap-[2rem] mb-[4rem] max-xs:w-[21vw] max-xs:ml-[9rem] max-xs:gap-[1rem]">
+                    <img src="/image 5.png" alt="Image representing company values and mission 5" />
+                    <img src="/image 6.png" alt="Image representing company values and mission 6" />
+                    <img src="./image 7.png" alt="Image representing company values and mission 7" />
+                    <img src="/image 8.png" alt="Image representing company values and mission 8" />
+                  </section>
+                  <section className="mb-[5rem]">
                     <Catch />
-                  </div>
+                  </section>
 
-                  <div className="mb-[5rem] flex flex-col max-md:gap-20 max-md:mb-[6rem]">
+                  <section className="mb-[5rem] flex flex-col max-md:gap-20 max-md:mb-[6rem]">
                     <AboutUs image="/code-dar.png" left="left" />
                     <AboutUs image="/coder.png" />
-                  </div>
-                  <div className="absolute w-[80vw] h-[80vh] z-2">
-                    <div className="lg:translate-x-[-35rem] max-md:hidden md:translate-x-[-28rem] sm:translate-x-[-20rem] translate-x-[-12rem] lg:translate-y-[-40rem] md:translate-y-[-30rem] sm:translate-y-[-25rem] translate-y-[-20rem]">
+                  </section>
+                  <section className="absolute w-[80vw] h-[80vh] z-2">
+                    <section className="lg:translate-x-[-35rem] max-md:hidden md:translate-x-[-28rem] sm:translate-x-[-20rem] translate-x-[-12rem] lg:translate-y-[-40rem] md:translate-y-[-30rem] sm:translate-y-[-25rem] translate-y-[-20rem]">
                       <SphereBackground
                         radius={getRadius(1.5, 1.25, 1, 0.75)}
                         opacity={0}
                         depth={1}
                       />
-                    </div>
-                  </div>
-                  <div className="absolute w-[80vw] h-[80vh] z-2">
-                    <div className="lg:translate-x-[45rem] max-md:hidden md:translate-x-[35rem] sm:translate-x-[25rem] translate-x-[15rem] lg:translate-y-[-10rem] md:translate-y-[-8rem] sm:translate-y-[-6rem] translate-y-[-4rem]">
+                    </section>
+                  </section>
+                  <section className="absolute w-[80vw] h-[80vh] z-2">
+                    <section className="lg:translate-x-[45rem] max-md:hidden md:translate-x-[35rem] sm:translate-x-[25rem] translate-x-[15rem] lg:translate-y-[-10rem] md:translate-y-[-8rem] sm:translate-y-[-6rem] translate-y-[-4rem]">
                       <SphereBackground
                         radius={getRadius(1.5, 1.25, 1, 0.75)}
                         opacity={0}
                         depth={1}
                       />
-                    </div>
-                  </div>
-                  <div className="mb-[5rem] w-screen h-fit  justify-center items-center ">
+                    </section>
+                  </section>
+                  <section className="mb-[5rem] w-screen h-fit  justify-center items-center ">
                     <FullTree />
-                  </div>
-                  <div className="flex flex-col items-center justify-center p-4 m-4 mb-[5rem]">
+                  </section>
+                  <section className="flex flex-col items-center justify-center p-4 m-4 mb-[5rem]">
                     <NewThemeGrid />
-                  </div>
+                  </section>
 
-                  <div className="mb-[5rem] max-md:mx-2 ">
+                  <section className="mb-[5rem] max-md:mx-2 ">
                     <NameCard />
-                  </div>
-                  <div className="mb-[5rem]">
+                  </section>
+                  <section className="mb-[5rem]">
                     <Faq />
-                  </div>
-                </div>
-                <div className="md:hidden">
+                  </section>
+                </section>
+                <section className="md:hidden">
                   <Particle />
-                </div>
-              </div>
+                </section>
+              </section>
             }
           />
           <Route path="/users/register" element={<Registration />} />

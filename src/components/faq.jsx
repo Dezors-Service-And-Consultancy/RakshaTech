@@ -38,7 +38,8 @@ export default function Faq() {
   return (
     <div id = "faq" className="min-h-fit p-20 max-md:p-5 overflow-y-hidden bg-neutral-950 text-slate-50">
       <div className="space-y-12">
-        <h1 className="text-[1.82rem] font-bold mb-8">Frequently Asked Questions</h1>
+        <h1 className="text-[1.82rem] font-bold mb-8">Frequently Asked Questions - Your Queries Answered</h1>
+
         <div>
           {data.map((d, index) => (
             <Question key={d.id} data={d} onClick={() => showAnswer(index)} isOpen={showSelectedQ === index} />

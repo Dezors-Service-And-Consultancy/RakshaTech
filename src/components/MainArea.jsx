@@ -15,12 +15,12 @@ const MainArea = ({ activeSection }) => {
         return (
           <>
             <h1 className="text-6xl text-white font-bold -m-8 opacity-60 z-0">
-              EVENTS
+              Upcoming Events - Join Us for Exciting Activities
             </h1>
-            <div className=" flex flex-row  w-[60vw]  border-[rgba(34,43,37,0.721)]  mt-10 mx-10 gap-4  z-10">
-              <div className="w-[50%] min-h-25 my-10 glassmorphism rounded-lg border  shadow-lg text-white ">
+            <div className="flex flex-row w-[60vw] border-[rgba(34,43,37,0.721)] mt-10 mx-10 gap-4 z-10">
+              <div className="w-[50%] min-h-25 my-10 glassmorphism rounded-lg border shadow-lg text-white">
                 <h2 className="block text-xl font-semibold">Event 1</h2>
-                <p className="block ">Status : Live</p>
+                <p className="block">Status: Live</p>
                 <Link to="/dashboard/events/edit">
                   <img
                     src={EditIcon}
@@ -38,7 +38,7 @@ const MainArea = ({ activeSection }) => {
               </div>
               <div className="w-[50%] min-h-25 my-10 glassmorphism rounded-lg border border-[rgba(34,43,37,0.721)] shadow-lg text-white bg-[rgba(157, 242, 178, 0.08)] backdrop-blur-lg">
                 <h2 className="text-xl font-semibold">Event 2</h2>
-                <p className="block">Status : Upcoming</p>
+                <p className="block">Status: Upcoming</p>
                 <Link to="/dashboard/events/edit">
                   <img
                     src={EditIcon}
@@ -56,7 +56,7 @@ const MainArea = ({ activeSection }) => {
               </div>
               <div className="w-[50%] min-h-25 my-10 glassmorphism rounded-lg border border-[rgba(34,43,37,0.721)] shadow-lg text-white bg-[rgba(157, 242, 178, 0.08)] backdrop-blur-lg flex items-center justify-center">
                 <Link to="/dashboard/events/add">
-                  <img src={AddIcon} alt="Add Event" className="w-4 h-4" />
+                  <img src={AddIcon} alt="Add Event - Create a New Event" className="w-4 h-4" />
                 </Link>
               </div>
             </div>
@@ -65,9 +65,9 @@ const MainArea = ({ activeSection }) => {
 
       case "teams":
         return (
-          <div className="flex flex-col items-center justify-start">
+          <section className="flex flex-col items-center justify-start">
             <h1 className="text-6xl text-white font-bold -m-8 opacity-30">
-              TEAMS
+              Our Teams - Meet the Innovators
             </h1>
             <div className="w-full max-w-lg p-4 rounded-lg border border-[rgba(34,43,37,0.721)] shadow-lg mt-10 bg-[rgba(157, 242, 178, 0.08)] backdrop-blur-lg">
               <select
@@ -97,14 +97,14 @@ const MainArea = ({ activeSection }) => {
                 </h2>
               </div>
             )}
-          </div>
+          </section>
         );
 
       case "submissions":
         return (
-          <div className="flex flex-col items-center justify-start">
+          <section className="flex flex-col items-center justify-start">
             <h1 className="text-6xl text-white font-bold -m-8 opacity-30">
-              SUBMISSIONS
+              Submissions - Share Your Ideas
             </h1>
             <div className="w-full max-w-lg p-4 rounded-lg border border-[rgba(34,43,37,0.721)] shadow-lg mt-10 bg-[rgba(157, 242, 178, 0.08)] backdrop-blur-lg">
               <select
@@ -134,20 +134,20 @@ const MainArea = ({ activeSection }) => {
                 </h2>
               </div>
             )}
-          </div>
+          </section>
         );
 
       case "announcements":
         return (
           <h1 className="text-6xl text-white font-bold -m-8 opacity-30">
-            ANNOUNCEMENTS
+            Announcements - Stay Updated
           </h1>
         );
 
       case "settings":
         return (
           <h1 className="text-6xl text-white font-bold -m-8 opacity-30">
-            SETTINGS
+            Settings - Configure Your Preferences
           </h1>
         );
 
@@ -161,9 +161,9 @@ const MainArea = ({ activeSection }) => {
   };
 
   return (
-    <div className="absolute top-2 w-full max-w-[1350px] mx-20 mt-20 self-center p-6  rounded-lg border border-[rgba(77,83,79,0.72)]  shadow-lg  eventcontainer glassmorphismevent">
+    <section className="absolute top-2 w-full max-w-[1350px] mx-20 mt-20 self-center p-6 rounded-lg border border-[rgba(77,83,79,0.72)] shadow-lg eventcontainer glassmorphismevent">
       <div className="text-center">{renderSection()}</div>
-    </div>
+    </section>
   );
 };
 
