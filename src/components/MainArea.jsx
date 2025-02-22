@@ -1,6 +1,6 @@
-import AddIcon from "../../public/asset/plus.png";
-import DeleteIcon from "../../public/asset/delete.png";
-import EditIcon from "../../public/asset/edit.png";
+import AddIcon from "../../public/assets/plus.png";
+import DeleteIcon from "../../public/assets/delete.png";
+import EditIcon from "../../public/assets/edit.png";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../Registration.css";
@@ -9,13 +9,12 @@ const MainArea = ({ activeSection }) => {
   const [selectedTeam, setSelectedTeam] = useState("");
   const [selectedSubmissionTeam, setSelectedSubmissionTeam] = useState("");
 
-
   const renderSection = () => {
     switch (activeSection) {
       case "events":
         return (
           <>
-            <h1 className= "text-6xl text-white font-bold -m-8 opacity-60 z-0">
+            <h1 className="text-6xl text-white font-bold -m-8 opacity-60 z-0">
               EVENTS
             </h1>
             <div className=" flex flex-row  w-[60vw]  border-[rgba(34,43,37,0.721)]  mt-10 mx-10 gap-4  z-10">
@@ -23,7 +22,11 @@ const MainArea = ({ activeSection }) => {
                 <h2 className="block text-xl font-semibold">Event 1</h2>
                 <p className="block ">Status : Live</p>
                 <Link to="/dashboard/events/edit">
-                  <img src={EditIcon} alt="Edit Event" className="w-4 h-4 absolute left-2 bottom-2" />
+                  <img
+                    src={EditIcon}
+                    alt="Edit Event"
+                    className="w-4 h-4 absolute left-2 bottom-2"
+                  />
                 </Link>
                 <Link to="/dashboard/events/delete">
                   <img
@@ -37,9 +40,13 @@ const MainArea = ({ activeSection }) => {
                 <h2 className="text-xl font-semibold">Event 2</h2>
                 <p className="block">Status : Upcoming</p>
                 <Link to="/dashboard/events/edit">
-                  <img src={EditIcon} alt="Edit Event" className="w-4 h-4 absolute left-2 bottom-2" />
+                  <img
+                    src={EditIcon}
+                    alt="Edit Event"
+                    className="w-4 h-4 absolute left-2 bottom-2"
+                  />
                 </Link>
-                <Link to="/dashboard/events/delete" >
+                <Link to="/dashboard/events/delete">
                   <img
                     src={DeleteIcon}
                     alt="Delete Event"

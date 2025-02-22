@@ -4,7 +4,7 @@ import Topbar from "./components/Topbar";
 import MainArea from "./components/MainArea";
 
 const Dashboard = () => {
-  const [activeSection, setActiveSection] = useState("events");
+  const [activeSection, setActiveSection] = useState();
 
   const handleSectionChange = (section) => {
     setActiveSection(section);
@@ -13,8 +13,8 @@ const Dashboard = () => {
   return (
     <div className="min-h-screen box-border m-0 p-0 h-screen overflow-y-hidden overflow-x-hidden ">
       <Topbar />
-      <Sidebar 
-        onSectionChange={handleSectionChange} 
+      <Sidebar
+        onSectionChange={handleSectionChange}
         activeSection={activeSection}
       />
       <MainArea activeSection={activeSection} />
